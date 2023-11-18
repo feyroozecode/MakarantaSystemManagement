@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static %}
+
 {% block title %}Students{% endblock title %}
 
 {% block breadcrumb %}
@@ -29,17 +29,7 @@
         {% for student in object_list %}
           <tr class='clickable-row' data-href="{% url 'student-detail' student.id %}">
             <td>{{ forloop.counter}}</td>
-            <td>
-               {% if object.passport %}
-                <img
-                  src="{{ object.passport.url }}"
-                  class="float-left rounded-circle mr-3" style="width: 60px; height: 40px;">
-               {% else %}
-                <img
-                  src="{% static 'dist/img/avatar.png' %}"
-                  class="float-left rounded-circle mr-3" style="width: 35px; height: 35px;">
-               {% endif %}
-            </td>
+            <td>  </td>
             <td>{{ student.surname}} {{student.firstname }} {{student.other_name }}</td>
             <td>{{ student.registration_number}}</td>
             <td>{{ student.current_class}}</td>
