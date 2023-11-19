@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Students{% endblock title %}
+{% block title %} Etudiant <!--Students--> {% endblock title %}
 
 {% block breadcrumb %}
 <a class="btn btn-primary" href="{% url 'student-create' %}"><i
-    class="fas fa-plus"></i> New student</a>
+    class="fas fa-plus"></i> Nouveau Etudiant <!--New student--> </a>
 <a class="btn btn-primary" href="{% url 'student-upload' %}"><i
-    class="fas fa-upload"></i> Upload students</a>
+    class="fas fa-upload"></i>Telecharger donnees <!-- Upload students --> </a>
 {% endblock breadcrumb %}
 
 {% block content %}
@@ -15,12 +15,12 @@
       <thead class="thead-light">
         <tr>
           <th>S/N</th>
-          <th>Image</th>
-          <th>Fullname</th>
-          <th>Registration Number</th>
-          <th>Current Class</th>
-          <th>Gender</th>
-          <th>Mobile Phone Number</th>
+          
+          <th> Nom & Prenom <!--Fullname -->  </th>
+          <th> Numero d'inscription <!--Registration Number --> </th>
+          <th> Classe actuelle <!-- Current Class--> </th>
+          <th>Genre <!--Gender --></th>
+          <th> Contact  Parent <!--Mobile Phone Number--> </th>
           <th>Status</th>
         </tr>
       </thead>
@@ -29,7 +29,7 @@
         {% for student in object_list %}
           <tr class='clickable-row' data-href="{% url 'student-detail' student.id %}">
             <td>{{ forloop.counter}}</td>
-            <td>
+            <!--td>
                {% if object.passport %}
                 <img
                   src="{{ object.passport.url }}"
@@ -39,7 +39,7 @@
                   src="{% static 'dist/img/avatar.png' %}"
                   class="float-left rounded-circle mr-3" style="width: 35px; height: 35px;">
                {% endif %}
-            </td>
+            </!td -->
             <td>{{ student.surname}} {{student.firstname }} {{student.other_name }}</td>
             <td>{{ student.registration_number}}</td>
             <td>{{ student.current_class}}</td>

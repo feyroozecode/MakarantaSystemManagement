@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, ListView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.utils.translation import gettext as _
 
 from apps.finance.models import Invoice
 
