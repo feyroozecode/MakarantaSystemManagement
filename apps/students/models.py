@@ -10,6 +10,12 @@ class Student(models.Model):
     STATUS_CHOICES = [("active", "Active"), ("inactive", "Inactive")]
 
     GENDER_CHOICES = [("male", "Garcon"), ("female", "Fille")]
+    
+    CITYES_CHOICE = [("niamey", "Niamey"), ("agadez", "Agadez"), ("diffa", "Diffa"), ("dosso", "Dosso"), ("maradi", "Maradi"), ("tahoua", "Tahoua"), ("tillaberi", "Tillaberi"), ("zinder", "Zinder") ]
+
+    HAS_LEARNED_QURAN = [(True, "Oui"), (False, "Non")]
+    
+    HEALTH_STATE_CHOICES = [("healthy", "Sain"), ("unhealthy", "Malade")]
 
     current_status = models.CharField(
         max_length=10, choices=STATUS_CHOICES, default="active",
@@ -19,11 +25,13 @@ class Student(models.Model):
         max_length=200, unique=True, verbose_name="Numero d'enregistrement"
     )
     
-    surname = models.CharField(max_length=200, verbose_name="Surnom")
-    firstname = models.CharField(max_length=200, verbose_name="Nom")
-    other_name = models.CharField(max_length=200, blank=True, verbose_name="Dexieme Nom")
+    name = models.CharField(max_length=200, default="", verbose_name="Nom")
+    firstname = models.CharField(max_length=200, verbose_name="Prenom")
+    #other_name = models.CharField(max_length=200, blank=True, verbose_name="Dexieme Nom")
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="male", verbose_name="Genre")
+    nationality = models.CharField(max_length=20, default="",verbose_name="Nationnalite")
     date_of_birth = models.DateField(default=timezone.now, verbose_name="Date de Naissance")
+    birth_city    = models.CharField(max_length=10, choices=CITYES_CHOICE, default="Niamey", verbose_name="Niamey")
     current_class = models.ForeignKey(
         StudentClass, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Classe actuelle"
     )
@@ -38,13 +46,16 @@ class Student(models.Model):
 
     address = models.TextField(blank=True)
     others = models.TextField(blank=True, verbose_name="Plus de details")
+    
+    has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default=False,  verbose_name="J'aide deja appris le Coran ")
+    health_state      = models.CharField(max_length=20, choices=HEALTH_STATE_CHOICES,default="healthy", verbose_name="Etat de Sante")
     passport = models.ImageField(blank=True, upload_to="students/passports/", verbose_name="Carte d'identite")
 
     class Meta:
-        ordering = ["surname", "firstname", "other_name"]
+        ordering = ["name", "firstname" ]
 
     def __str__(self):
-        return f"{self.surname} {self.firstname} {self.other_name} ({self.registration_number})"
+        return f"{self.name} {self.firstname} ({self.registration_number})"
 
     def get_absolute_url(self):
         return reverse("student-detail", kwargs={"pk": self.pk})
