@@ -18,6 +18,12 @@ password: admin123
 
 ## Usage
 Install in a Virtual Environment. Once you have set up a VE, clone this project
+this Fork : 
+```bash 
+    git clone https://github.com/feyroozecode/MakarantaSystemManagement.git
+```
+
+- Original Project -
 ```bash
 git clone https://github.com/adigunsherif/Django-School-Management-System.git
 ```
