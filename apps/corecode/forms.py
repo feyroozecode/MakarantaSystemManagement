@@ -60,3 +60,5 @@ class CurrentSessionForm(forms.Form):
         queryset=AcademicTerm.objects.all(),
         help_text='Click <a href="/term/create/?next=current-session/">here</a> to add new term',
     )
+
+# 
