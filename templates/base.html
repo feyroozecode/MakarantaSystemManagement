@@ -42,7 +42,7 @@
           <a href="{% url 'current-session' %}" class="nav-link">Session: {{ current_session }}</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="{% url 'current-session' %}" class="nav-link">Term: {{ current_term }}</a>
+          <a href="{% url 'current-session' %}" class="nav-link"> Term: {{ current_term }}</a>
         </li>
       </ul>
 
@@ -61,7 +61,7 @@
             </a>
             <div class="dropdown-divider"></div>
             <a href="{% url 'logout' %}" class="dropdown-item">
-              <i class="fas fa-sign-out"></i> Sign out
+              <i class="fas fa-sign-out"></i> <!-- Sign out --> Se déconnecter
             </a>
           </div>
         </li>
@@ -76,7 +76,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="{% url 'home' %}" class="brand-link">{{ school_name | default:"MySchool" }}</a>
+      <a href="{% url 'home' %}" class="brand-link">{{ school_name | default:"Makaranta | Imam Malick " }}</a>
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -117,7 +117,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                  Management
+                 <!--  Management --> Gestion Scolare
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -151,7 +151,7 @@
                   <a href="{% url 'subjects' %}" class="nav-link">
                     <i class="nav-icon fas fa-bars"></i>
                     <p>
-                      Subjects
+                      <!-- Subjects --> Matiéres
                     </p>
                   </a>
                 </li>
@@ -159,12 +159,21 @@
               </ul>
             </li>
 
-            <li class="nav-header">Results</li>
+            <li class="nav-header"> <!-- Results --> Note et  Bulletins </li>
+            
             <li class="nav-item">
               <a href="{% url 'create-result' %}" class="nav-link">
                 <i class="nav-icon fas fa-money-bill-alt"></i>
                 <p>
-                  Create Results
+                  <!-- Create Results --> Génerer des Bulletins
+                </p>
+              </a>
+            </li>
+             <li class="nav-item">
+              <a href="{% url 'view-results' %}" class="nav-link">
+                <i class="nav-icon fas fa-money-bill-alt"></i>
+                <p>
+                 <!--  View Results --> Voir les resultat
                 </p>
               </a>
             </li>
@@ -172,24 +181,17 @@
               <a href="{% url 'edit-results' %}" class="nav-link">
                 <i class="nav-icon fas fa-money-bill-alt"></i>
                 <p>
-                  Update Results
+                <!--  Update Results --> Mise à jour
                 </p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="{% url 'view-results' %}" class="nav-link">
-                <i class="nav-icon fas fa-money-bill-alt"></i>
-                <p>
-                  View Results
-                </p>
-              </a>
-            </li>
+           
 
             <li class="nav-item">
               <a href="{% url 'configs' %}" class="nav-link">
                 <i class="nav-icon fas fa-cog"></i>
                 <p>
-                  Settings
+                  <!-- Settings --> Paramétre
                 </p>
               </a>
             </li>
