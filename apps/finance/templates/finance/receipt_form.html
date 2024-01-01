@@ -10,25 +10,25 @@
 
       {% include 'corecode/form_snippet.html' %}
 
-      <input type="submit" class="btn btn-primary" value="Add payment">
+      <input type="submit" class="btn btn-primary" value="Ajouter le paiement">
 
     </form>
   </div>
 
   <div class="col-4">
     <div class="alert alert-info" role="alert">
-      <h3>INVOICE</h3>
+      <h3>Facture <!--INVOICE --> </h3>
       <p>{{invoice | upper}}</p>
       <hr>
       <ul>
 
-        <li>Session: {{ invoice.session }}</li>
-        <li>Term: {{ invoice.term }}</li>
-        <li>Class: {{ invoice.class_for }}</li>
-        <li>Total Amount Payable: {{invoice.total_amount_payable | intcomma }}
-        </li>
-        <li>Total Amount Paid: {{ invoice.total_amount_paid | intcomma }}</li>
-        <li><strong>Balance: {{invoice.balance | intcomma }}</strong></li>
+       <li>Session : {{ invoice.session }}</li>
+        <li>Terme : {{ invoice.term }}</li>
+        <li>Classe : {{ invoice.class_for }}</li>
+        <li>Total à payer : {{ invoice.total_amount_payable | intcomma }}</li>
+        <li>Total payé : {{ invoice.total_amount_paid | intcomma }}</li>
+        <li><strong>Solde : {{ invoice.balance | intcomma }}</strong></li>
+
       </ul>
     </div>
   </div>

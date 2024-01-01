@@ -65,7 +65,7 @@ def create_result(request):
                 {"students": studentlist, "form": form, "count": len(id_list)},
             )
         else:
-            messages.warning(request, "You didnt select any student.")
+            messages.warning(request, "Selectionner au moins un etudiant") # You didnt select any student.
     return render(request, "result/create_result.html", {"students": students})
 
 

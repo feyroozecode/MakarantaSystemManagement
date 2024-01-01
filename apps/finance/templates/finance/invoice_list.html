@@ -5,9 +5,10 @@
 
 {% block breadcrumb %}
 <a class="btn btn-primary" href="{% url 'invoice-create' %}"><i
-    class="fas fa-plus"></i> New Invoice</a>
-<a class="btn btn-primary" href="{% url 'bulk-invoice' %}"><i
+    class="fas fa-plus"></i> <!-- New Invoice--> Nouvelle Facture </a>
+<!-- <a class="btn btn-primary" href="{% url 'bulk-invoice' %}"><i
     class="fas fa-upload"></i> Bulk Invoice</a>
+-->
 {% endblock breadcrumb %}
 
 {% block content %}
@@ -16,11 +17,11 @@
       <thead class="thead-light">
         <tr>
           <th>S/N</th>
-          <th>invoice</th>
-          <th>Session-term</th>
-          <th>Total Payable</th>
-          <th>Total Paid</th>
-          <th>Balance</th>
+          <th>Facture</th>
+          <th>Durée de la session<!--Session-term --> </th>
+          <th>Total à payer <!-- Total Payable --> </th>
+          <th>Total payé <!--Total Paid--></th>
+          <th>Solde (Balance)</th>
           <th></th>
         </tr>
       </thead>
@@ -35,8 +36,8 @@
             <td>{{ invoice.total_amount_paid | intcomma }}</td>
             <td>{{ invoice.balance | intcomma }}</td>
             <td><a class="btn btn-success btn-sm"
-                href="{% url 'receipt-create' %}?invoice={{ invoice.id }}">Add new
-                receipt</a></td>
+                href="{% url 'receipt-create' %}?invoice={{ invoice.id }}">
+                Ajout Nouveau reçu <!-- Add new receipt --> </a></td>
           </tr>
         {% endfor %}
 
