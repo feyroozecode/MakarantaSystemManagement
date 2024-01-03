@@ -27,6 +27,7 @@ class Student(models.Model):
     
     name = models.CharField(max_length=200, default="", verbose_name="Nom")
     firstname = models.CharField(max_length=200, verbose_name="Prenom")
+    arabic_name = models.CharField(max_length=200, default="", verbose_name="Nom complet en Arabe")
     #other_name = models.CharField(max_length=200, blank=True, verbose_name="Dexieme Nom")
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default="male", verbose_name="Genre")
     nationality = models.CharField(max_length=20, default="",verbose_name="Nationnalite")
