@@ -46,12 +46,13 @@ class Student(models.Model):
     )
 
     address = models.TextField(blank=True)
-    others = models.TextField(blank=True, verbose_name="Plus de details")
     
-    #has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default=False,  verbose_name="J'aide deja appris le Coran ")
-    #health_state      = models.CharField(max_length=20, choices=HEALTH_STATE_CHOICES,default="healthy", verbose_name="Etat de Sante")
+    has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default=False,  verbose_name="J'aide deja appris le Coran ")
+    health_state      = models.CharField(max_length=20, choices=HEALTH_STATE_CHOICES,default="healthy", verbose_name="Etat de Sante")
     passport = models.ImageField(blank=True, upload_to="students/passports/", verbose_name="Carte d'identite")
 
+    others = models.TextField(blank=True, verbose_name="Plus de details")
+    
     class Meta:
         ordering = ["name", "firstname" ]
 
