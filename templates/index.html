@@ -2,6 +2,71 @@
 
 
 {% block content %}
-  <p>Dashboard contents and design coming soon.</p>
-  <p> Use the sidebar menu for now!</p>
+   <header>
+        <style>
+             #my_nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling if needed */
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        .btn-custom {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .nav p {
+            margin: 0;
+            font-size: 16px;
+        }
+     
+    </style>
+    
+    <h1>Welcome to Django Dashboard</h1>
+    </header>
+    <nav id="my_nav">
+        
+        <a href="/student/list" class="btn btn-custom">
+            <i class="nav-icon fas fa-graduation-cap"></i>
+            <p>Gestion des étudiants</p>
+        </a>
+       <a href="/result/view/all" class="btn btn-custom">
+              <i class="nav-icon fas fa-money-bill-alt"></i>
+            <p>Voir les resultat</p>
+      </a>
+      
+       <a href="/finance/list/" class="btn btn-custom">
+              <i class="nav-icon fas fa-money-bill-alt"></i>
+            <p>Gestion des Facture et récus</p>
+      </a>
+
+       
+     
+      </ul>
+    </nav>
+    <section>
+        
+    </section>
+    <p>
+    <a href="{% url 'logout' %}">Décconnectez vous </a>
+  </p>
+    <footer>
+        &copy; 2024 Django Dashboard
+    </footer>
+  
 {% endblock content %}

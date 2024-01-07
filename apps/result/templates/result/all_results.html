@@ -1,22 +1,52 @@
+
 {% extends 'base.html' %}
+{% load static %}
 
 {% block fullcard %}
 
+<head>
+  <style>
+    #bul_title {
+      text-align: center;
+      color: #000000;
+     
+    }
+    #bul_title p {
+       text-decoration: underline;
+    }
+  </style>
+</head>
+
   {% for key, result in results.items %}
     <div class="card">
-      <div class="card-header">
-        {{result.student}}
+
+     <!--
+       <div>
+       <img width="100%" src="{% static 'dist/img/bulletin_entete.png' %}" alt="entete bulletin">
+      </div>
+     -->
+
+     {% include 'components/bulletin_header.html' %}
+
+     <div>
+        <h3 id="bul_title"> 
+          <p class="title"> <sub>  Relevé de Notes  - كشف الدرجات </sub> </p>
+         </h3>
+     </div>
+     
+     <div class="card-header">
+        Nom de l'éleve : <b> {{result.student}} </b>
       </div>
       <div class="card-body">
         <table class="table table-bordered table-sm">
           <thead class="thead-light">
             <tr>
               <th></th>
-              <th>Subject</th>
-              <th>Test Score</th>
-              <th>Exam Score</th>
-              <th>Total Score</th>
-              <th>Grade</th>
+              <th>Matiére</th>
+              <th>Note De Dévoir <!-- Test Score --> </th>
+              <th>Note d'examen </th>
+              <th>Total </th>
+              <th>Grade </th>
             </tr>
           </thead>
           <tbody>
