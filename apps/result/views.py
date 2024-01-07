@@ -47,6 +47,7 @@ def create_result(request):
                                 )
 
                 Result.objects.bulk_create(results)
+                
                 return redirect("edit-results")
 
         # after choosing students

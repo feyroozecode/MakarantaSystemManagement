@@ -17,6 +17,10 @@ class Student(models.Model):
     
     HEALTH_STATE_CHOICES = [("healthy", "Sain"), ("unhealthy", "Malade")]
 
+    mobile_num_regex = RegexValidator(
+        regex="^[0-9]{10,15}$", message="Entered mobile number isn't in a right format!"
+    )
+     
     current_status = models.CharField(
         max_length=10, choices=STATUS_CHOICES, default="active",
         verbose_name= "Statut Courant"
@@ -38,9 +42,7 @@ class Student(models.Model):
     )
     date_of_admission = models.DateField(default=timezone.now, verbose_name="Date d'admission")
 
-    mobile_num_regex = RegexValidator(
-        regex="^[0-9]{10,15}$", message="Entered mobile number isn't in a right format!"
-    )
+   
     parent_mobile_number = models.CharField(
         validators=[mobile_num_regex], max_length=13, blank=True, verbose_name="Contact parent"
     )
