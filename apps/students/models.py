@@ -13,7 +13,7 @@ class Student(models.Model):
     
     CITYES_CHOICE = [("niamey", "Niamey"), ("agadez", "Agadez"), ("diffa", "Diffa"), ("dosso", "Dosso"), ("maradi", "Maradi"), ("tahoua", "Tahoua"), ("tillaberi", "Tillaberi"), ("zinder", "Zinder") ]
 
-    HAS_LEARNED_QURAN = [(True, "Oui"), (False, "Non")]
+    HAS_LEARNED_QURAN = [('yes', "Oui"), ('no', "Non")] 
     
     HEALTH_STATE_CHOICES = [("healthy", "Sain"), ("unhealthy", "Malade")]
 
@@ -47,7 +47,7 @@ class Student(models.Model):
 
     address = models.TextField(blank=True)
     
-    has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default=False,  verbose_name="J'aide deja appris le Coran ")
+    has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default="yes", verbose_name="J'aide deja appris le Coran ", blank=True,)
     health_state      = models.CharField(max_length=20, choices=HEALTH_STATE_CHOICES,default="healthy", verbose_name="Etat de Sante")
     passport = models.ImageField(blank=True, upload_to="students/passports/", verbose_name="Carte d'identite")
 

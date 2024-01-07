@@ -9,11 +9,26 @@
     #bul_title {
       text-align: center;
       color: #000000;
+      font-weight: 600;
      
     }
+
     #bul_title p {
        text-decoration: underline;
+       text-underline-offset: 0.3em;
     }
+
+    .bul-header-details{
+       text-align: left;
+       margin-left: 2em;
+       margin-right: 2em;
+     }
+
+     .rtl {
+          direction: rtl;
+          
+      }
+
   </style>
 </head>
 
@@ -34,9 +49,31 @@
          </h3>
      </div>
      
-     <div class="card-header">
-        Nom de l'éleve : <b> {{result.student}} </b>
+    <div class="card-header row bul-header-details">
+    <!-- Left column for French information -->
+      <div class="col-md-6">
+          <div class="card-header">
+              <p> Nom de l'éleve : <b>{{ result.student.arabic_name }}</b></p>
+              <p> Niveau : <b>{{ result.student.current_class }}</b></p>
+              <p> Note du : <b>{{ result.current_term }}</b></p>
+          </div>
       </div>
+
+      <!-- Right column for Arabic equivalent -->
+      <div class="col-md-6">
+          <div class="card-header ">
+              <p class="rtl"> اسم الطالب : <b>{{ result.student.arabic_name }}</b></p>
+              <p  class="rtl"> اسم ال> المستوى : <b>{{ result.student.current_class}}</b></p>
+              <p  class="rtl"> اسم ال> العلامة : <b>{{ result.current_term }}</b></p>
+              <!-- Adjust the field names as per your actual model fields -->
+          </div>
+      </div>
+  </div>
+
+      <div>
+
+      </div>
+
       <div class="card-body">
         <table class="table table-bordered table-sm">
           <thead class="thead-light">

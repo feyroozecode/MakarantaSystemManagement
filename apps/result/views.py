@@ -90,6 +90,9 @@ class ResultListView(LoginRequiredMixin, View):
         results = Result.objects.filter(
             session=request.current_session, term=request.current_term
         )
+  
+        current_term  = request.current_term
+        
         bulk = {}
 
         for result in results:
@@ -108,6 +111,8 @@ class ResultListView(LoginRequiredMixin, View):
                 "test_total": test_total,
                 "exam_total": exam_total,
                 "total_total": test_total + exam_total,
+                "current_term": current_term,
+                "current_class": result.current_class
             }
 
         context = {"results": bulk}

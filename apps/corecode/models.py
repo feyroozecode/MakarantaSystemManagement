@@ -30,7 +30,9 @@ class AcademicTerm(models.Model):
     """Academic Term"""
 
     name = models.CharField(max_length=20, unique=True)
-    current = models.BooleanField(default=True)
+    #arabic_name = models.CharField(max_length=255, unique=True)
+    
+    current = models.BooleanField(default=True, verbose_name="Seméstre courant")
 
     class Meta:
         ordering = ["name"]

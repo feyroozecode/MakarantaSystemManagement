@@ -48,6 +48,7 @@ class SiteConfigView(LoginRequiredMixin, View):
         return render(request, self.template_name, context)
 
 
+# SESSIONS
 class SessionListView(LoginRequiredMixin, SuccessMessageMixin, ListView):
     model = AcademicSession
     template_name = "corecode/session_list.html"
@@ -89,6 +90,7 @@ class SessionUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
             if not terms:
                 messages.warning(self.request, "You must set a session to current.")
                 return redirect("session-list")
+        
         return super().form_valid(form)
 
 
@@ -104,6 +106,7 @@ class SessionDeleteView(LoginRequiredMixin, DeleteView):
             messages.warning(request, "Cannot delete session as it is set to current")
             return redirect("sessions")
         messages.success(self.request, self.success_message.format(obj.name))
+       
         return super(SessionDeleteView, self).delete(request, *args, **kwargs)
 
 
@@ -114,6 +117,7 @@ class TermListView(LoginRequiredMixin, SuccessMessageMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["form"] = AcademicTermForm()
+        
         return context
 
 

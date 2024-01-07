@@ -26,6 +26,7 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
     def get_context_data(self, **kwargs):
         context = super(StudentDetailView, self).get_context_data(**kwargs)
         context["payments"] = Invoice.objects.filter(student=self.object)
+        
         return context
 
 
@@ -58,6 +59,7 @@ class StudentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
         form.fields["address"].widget = widgets.Textarea(attrs={"rows": 2})
         form.fields["others"].widget = widgets.Textarea(attrs={"rows": 2})
         # form.fields['passport'].widget = widgets.FileInput()
+        
         return form
 
 
