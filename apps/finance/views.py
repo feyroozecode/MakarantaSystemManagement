@@ -49,6 +49,7 @@ class InvoiceDetailView(LoginRequiredMixin, DetailView):
         context = super(InvoiceDetailView, self).get_context_data(**kwargs)
         context["receipts"] = Receipt.objects.filter(invoice=self.object)
         context["items"] = InvoiceItem.objects.filter(invoice=self.object)
+        
         return context
 
 
@@ -68,6 +69,7 @@ class InvoiceUpdateView(LoginRequiredMixin, UpdateView):
         else:
             context["receipts"] = InvoiceReceiptFormSet(instance=self.object)
             context["items"] = InvoiceItemFormset(instance=self.object)
+            
         return context
 
     def form_valid(self, form):

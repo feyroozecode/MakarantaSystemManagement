@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import SMSMessageForm
 
+from apps.students.models import Student
 
 def send_sms(request):
     if request.method == 'POST':
@@ -8,18 +9,21 @@ def send_sms(request):
         if form.is_valid():
             
             # Get the selected student from the form
-            selected_student = form.cleaned_data['contact'].student
-
-            # Fetch the parent's phone number
-            parent_phone_number = selected_student.parent_mobile_number
-
-            form.save
+            selected_student_id = form.cleaned_data['student']
+            selected_student = Student.objects.get(id=selected_student_id)
             
-            # send message code..
+            #
+            parent_phone_number = selected_student.parent_mobile_number
+            
+            context = {
+                'parent_phone_number': parent_phone_number,
+            }
+            
+            form.save
             
             return redirect('send_sms')
     else :
         form = SMSMessageForm()
         
-    #return render(request, 'send_sms', {'form': form})
-    return render(request, 'smssender/send_sms.html', {'form': form})
+    context = {'form': form}
+    return render(request, 'smssender/send_sms.html', context)
