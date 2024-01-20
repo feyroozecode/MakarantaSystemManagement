@@ -12,6 +12,10 @@ class SMSMessageForm(forms.ModelForm):
         queryset=Student.objects.all(),
         label='Selectionner l\'étudiant',
         widget=forms.Select(attrs={'class': 'form-control'}),
-       
     )
     
+    message = forms.CharField(
+        label='Message',
+        widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
+    )
+     
