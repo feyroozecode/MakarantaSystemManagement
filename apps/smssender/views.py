@@ -12,7 +12,6 @@ def send_sms(request):
             selected_student_id = form.cleaned_data['student']
             selected_student = Student.objects.get(id=selected_student_id)
             
-            #
             parent_phone_number = selected_student.parent_mobile_number
             
             context = {
