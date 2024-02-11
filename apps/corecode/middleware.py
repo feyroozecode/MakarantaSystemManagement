@@ -19,6 +19,8 @@
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseServerError
 
+from apps.corecode.models import AcademicSession
+
 class SiteWideConfigs:
     def __init__(self, get_response):
         self.get_response = get_response
