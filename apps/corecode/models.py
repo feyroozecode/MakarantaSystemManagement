@@ -25,15 +25,6 @@ class AcademicSession(models.Model):
     def __str__(self):
         return self.name
 
-    @classmethod
-    def get_current_session(cls):
-        try:
-            return cls.objects.get(current=True)
-        except cls.DoesNotExist:
-            # If no current session exists, create a default one
-            default_session_name = "Default Session"
-            
-            return cls.objects.create(name=default_session_name, current=True)
 
 class AcademicTerm(models.Model):
     """Academic Term"""
