@@ -5,9 +5,9 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.forms import widgets
 from django.http import HttpResponse
 from django.urls import reverse_lazy
+from django.utils.translation import gettext as _
 from django.views.generic import DetailView, ListView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
-from django.utils.translation import gettext as _
 
 from apps.finance.models import Invoice
 

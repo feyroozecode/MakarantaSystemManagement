@@ -1,7 +1,9 @@
-from django.shortcuts import render, redirect
-from .forms import SMSMessageForm
+from django.shortcuts import redirect, render
 
 from apps.students.models import Student
+
+from .forms import SMSMessageForm
+
 
 def send_sms(request):
     if request.method == 'POST':
