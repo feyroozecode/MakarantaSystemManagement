@@ -20,6 +20,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponseServerError
 
 from apps.corecode.models import AcademicSession
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponseServerError
 
 class SiteWideConfigs:
     def __init__(self, get_response):
@@ -27,27 +29,29 @@ class SiteWideConfigs:
 
     def __call__(self, request):
         try:
+            # Get the current session if it exists
             current_session = AcademicSession.objects.get(current=True)
         except ObjectDoesNotExist:
-            # Create a new AcademicSession or show an error message
+            # If AcademicSession with current=True does not exist, attempt to create a new one
             try:
-                # Attempt to create a new AcademicSession with default values
+                # Set any existing session with current=True to current=False
+                AcademicSession.objects.filter(current=True).update(current=False)
+                # Create a new default session
                 current_session = AcademicSession.objects.create(
-                    # Provide default values for the AcademicSession fields
-                    # Adjust these values according to your application's requirements
                     name="Default Session",
                     start_date="2024-01-01",
                     end_date="2024-12-31",
                     current=True
                 )
             except Exception as e:
-                # If an error occurs while creating the AcademicSession, handle it here
-                # For example, log the error and return a server error response
+                # If an error occurs during creation, handle it and return a server error response
                 print("Error creating AcademicSession:", e)
                 return HttpResponseServerError("Internal Server Error")
 
+        # Assign the current_session to the request object
         request.current_session = current_session
 
+        # Pass the request to the next middleware or view
         response = self.get_response(request)
 
         return response
