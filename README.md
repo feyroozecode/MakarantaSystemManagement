@@ -10,8 +10,11 @@ It currently doesn't allow students/staff to login.
 
 
 ## Demo
-Demo has stopped working on https://django-school-app.herokuapp.com/ since Heroku has stopped their free version.
-```bash
+python manage.py runserver  # run the server
+
+## Admin Login
+When you run migrate, a superuser is created.
+```bash 
 username: admin
 password: admin123
 ```
