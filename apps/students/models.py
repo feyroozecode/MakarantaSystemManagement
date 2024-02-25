@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.utils import timezone
 
 from apps.corecode.models import StudentClass
+#from apps.students.utils import generate_student_number
 
 
 class Student(models.Model):
@@ -26,7 +27,10 @@ class Student(models.Model):
         verbose_name= "Statut Courant"
     )
     registration_number = models.CharField(
-        max_length=200, unique=True, verbose_name="Numero d'enregistrement"
+        max_length=10,
+        unique=True,
+        #default = generate_student_number,
+        verbose_name="Numero d'enregistrement"
     )
     
     name = models.CharField(max_length=200, default="", verbose_name="Nom")
@@ -65,7 +69,27 @@ class Student(models.Model):
 
     def get_absolute_url(self):
         return reverse("student-detail", kwargs={"pk": self.pk})
-
+    
+    def save(self, *args, **kwargs):
+        if not self.registration_number:
+            # Get the latest student register number
+            last_student = Student.objects.order_by('-id').first()
+            if last_student:
+                last_register_number = last_student.registration_number
+                # Extract the numeric part of the register number
+                last_number = int(last_register_number.split('-')[1])
+            else:
+                # If no students exist yet, start with 0
+                last_number = 0
+            # Increment the numeric part
+            new_number = last_number + 1
+            # Format the new register number with the prefix and padded numeric part
+            self.registration_number = 'M-{0:03d}'.format(new_number)
+        super().save(*args, **kwargs)
+    
+    def __str__(self):
+        return self.registration_number
+    
 class StudentBulkUpload(models.Model):
     date_uploaded = models.DateTimeField(auto_now=True)
     csv_file = models.FileField(upload_to="students/bulkupload/")

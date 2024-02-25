@@ -34,7 +34,7 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Student
     fields = "__all__"
     success_message = "New student successfully added."
-
+    
     def get_form(self):
         """add date picker in forms"""
         form = super(StudentCreateView, self).get_form()
@@ -42,6 +42,18 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         form.fields["address"].widget = widgets.Textarea(attrs={"rows": 2})
         form.fields["others"].widget = widgets.Textarea(attrs={"rows": 2})
         return form
+    
+    def get_initial(self):
+        initial = super().get_initial()
+        last_student = Student.objects.order_by('-id').first()
+        if last_student:
+            last_registration_number = last_student.registration_number
+            last_number = int(last_registration_number.split('-')[1])
+        else:
+            last_number = 0
+        new_number = last_number + 1
+        initial['registration_number'] = 'M-{0:03d}'.format(new_number)
+        return initial
 
 
 class StudentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
