@@ -8,11 +8,12 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic import DetailView, ListView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
-
+from django.urls import reverse_lazy, reverse
 from apps.finance.models import Invoice
-
+from django.shortcuts import redirect
+from django.http import HttpResponse, HttpResponseRedirect
 from .models import Student, StudentBulkUpload
-
+from apps.finance.models import Invoice
 
 class StudentListView(LoginRequiredMixin, ListView):
     model = Student
@@ -29,7 +30,6 @@ class StudentDetailView(LoginRequiredMixin, DetailView):
         
         return context
 
-
 class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Student
     fields = "__all__"
@@ -41,6 +41,7 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         form.fields["date_of_birth"].widget = widgets.DateInput(attrs={"type": "date"})
         form.fields["address"].widget = widgets.Textarea(attrs={"rows": 2})
         form.fields["others"].widget = widgets.Textarea(attrs={"rows": 2})
+        
         return form
     
     def get_initial(self):
@@ -53,8 +54,8 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
             last_number = 0
         new_number = last_number + 1
         initial['registration_number'] = 'M-{0:03d}'.format(new_number)
+        
         return initial
-
 
 class StudentUpdateView(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Student
