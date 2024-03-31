@@ -4,6 +4,7 @@ from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.urls import reverse
 
 from apps.students.models import Student
 
@@ -121,3 +122,7 @@ class ReceiptDeleteView(LoginRequiredMixin, DeleteView):
 @login_required
 def bulk_invoice(request):
     return render(request, "finance/bulk_invoice.html")
+
+
+def get_absolute_url(self):
+    return redirect(reverse('finance:create', kwargs={'user': self.pk}))

@@ -17,6 +17,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
 
+app_name = "finance"
+
 urlpatterns = [
     path("accounts/", include("django.contrib.auth.urls")),
     path("", include("apps.corecode.urls")),
