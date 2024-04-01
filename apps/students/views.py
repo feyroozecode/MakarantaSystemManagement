@@ -53,7 +53,7 @@ class StudentCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         else:
             last_number = 0
         new_number = last_number + 1
-        initial['registration_number'] = 'M-{0:03d}'.format(new_number)
+        initial['registration_number'] = 'MIM-{0:03d}'.format(new_number)
         
         return initial
 

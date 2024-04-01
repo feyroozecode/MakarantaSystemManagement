@@ -1,0 +1,332 @@
+INFO 2024-03-14 12:14:07,839 Watching for file changes with StatReloader
+INFO 2024-03-14 12:14:23,548 "GET / HTTP/1.1" 302 0
+INFO 2024-03-14 12:14:23,871 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-03-14 12:14:24,318 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-03-14 12:14:24,319 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-03-14 12:14:24,322 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-03-14 12:14:24,328 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-03-14 12:14:24,330 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-03-14 12:14:24,343 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-03-14 12:14:24,352 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-03-14 12:14:24,354 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-03-14 12:14:24,355 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-03-14 12:14:24,362 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2024-03-14 12:14:24,364 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-03-14 12:14:24,366 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-03-14 12:14:24,366 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-03-14 12:14:25,193 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-03-14 12:14:44,333 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-03-14 12:14:44,544 "GET / HTTP/1.1" 200 11566
+INFO 2024-03-14 12:14:44,832 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-03-14 12:14:44,850 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-03-14 12:14:45,492 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2024-03-14 12:14:47,752 "GET /student/list HTTP/1.1" 200 14694
+INFO 2024-03-14 12:14:49,809 "GET /student/create/ HTTP/1.1" 200 16377
+INFO 2024-03-17 13:16:11,805 Watching for file changes with StatReloader
+INFO 2024-03-17 13:16:45,150 "GET / HTTP/1.1" 302 0
+INFO 2024-03-17 13:16:46,027 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-03-17 13:16:46,423 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-03-17 13:16:46,428 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-03-17 13:16:46,447 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-03-17 13:16:46,466 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-03-17 13:16:46,490 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-03-17 13:16:46,496 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-03-17 13:16:46,508 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-03-17 13:16:47,895 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-03-17 13:16:47,908 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-03-17 13:16:47,913 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-03-17 13:16:47,915 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-03-17 13:16:47,920 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-03-17 13:16:47,924 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-03-17 13:16:47,924 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-03-17 13:16:52,405 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-03-17 13:16:52,437 "GET / HTTP/1.1" 200 11566
+INFO 2024-03-17 13:16:52,476 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-03-17 13:16:52,700 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-03-17 13:16:52,806 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-03-17 13:16:53,438 Not Found: /favicon.ico
+WARNING 2024-03-17 13:16:53,439 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-03-17 13:16:54,394 "GET /student/list HTTP/1.1" 200 14694
+INFO 2024-03-17 13:16:57,795 "GET /student/22/ HTTP/1.1" 200 13029
+INFO 2024-03-17 13:16:57,952 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2024-03-17 13:17:00,613 "GET /student/create/ HTTP/1.1" 200 16377
+INFO 2024-03-17 13:22:31,597 "GET /student/create/ HTTP/1.1" 200 16377
+INFO 2024-03-17 13:26:18,710 "GET /student/create/ HTTP/1.1" 302 0
+INFO 2024-03-17 13:26:18,777 "GET /accounts/login/?next=/student/create/ HTTP/1.1" 200 4148
+INFO 2024-03-17 13:26:19,064 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-03-17 13:26:19,190 "GET /static/dist/css/login-page.css HTTP/1.1" 304 0
+INFO 2024-03-17 13:26:19,212 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-03-17 13:26:19,231 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+INFO 2024-03-17 13:26:19,282 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-03-17 13:26:19,283 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-03-17 13:26:19,314 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-03-17 13:26:19,515 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2024-03-17 13:26:19,530 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 304 0
+INFO 2024-03-17 13:26:19,547 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-03-17 13:26:19,552 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-03-17 13:26:19,556 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-03-17 13:26:19,559 "GET /static/dist/js/demo.js HTTP/1.1" 304 0
+INFO 2024-03-17 13:26:19,740 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-03-17 13:26:35,841 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-03-17 13:26:35,916 "GET /student/create/ HTTP/1.1" 200 16377
+INFO 2024-03-17 13:26:36,205 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-03-17 13:26:36,224 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-03-17 13:26:36,365 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+WARNING 2024-03-17 13:26:37,168 Not Found: /favicon.ico
+WARNING 2024-03-17 13:26:37,169 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-03-17 13:27:36,004 "GET /finance/list/ HTTP/1.1" 200 11192
+INFO 2024-03-17 13:27:40,426 "GET /finance/9/detail/ HTTP/1.1" 200 11675
+INFO 2024-03-17 13:27:43,712 "GET /finance/create/ HTTP/1.1" 200 14832
+INFO 2024-03-17 13:28:59,853 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:29:03,112 Watching for file changes with StatReloader
+INFO 2024-03-17 13:29:05,677 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:29:07,023 Watching for file changes with StatReloader
+INFO 2024-03-17 13:29:08,616 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:29:09,788 Watching for file changes with StatReloader
+INFO 2024-03-17 13:29:28,110 "GET /staff/list/ HTTP/1.1" 200 10373
+INFO 2024-03-17 13:29:31,522 "GET /student/list HTTP/1.1" 200 14694
+INFO 2024-03-17 13:29:32,534 "GET /student/list HTTP/1.1" 200 14694
+INFO 2024-03-17 13:29:34,121 "GET /student/create/ HTTP/1.1" 200 16377
+ERROR 2024-03-17 13:29:55,497 Internal Server Error: /student/create/
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'finance'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/messages/views.py", line 12, in form_valid
+    response = super().form_valid(form)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py", line 70, in get_absolute_url
+    return reverse("finance:create", kwargs={"user": self.pk})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'finance' is not a registered namespace
+ERROR 2024-03-17 13:29:55,501 "POST /student/create/ HTTP/1.1" 500 128194
+INFO 2024-03-17 13:31:07,994 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:31:11,249 Watching for file changes with StatReloader
+INFO 2024-03-17 13:33:13,359 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:33:15,990 Watching for file changes with StatReloader
+INFO 2024-03-17 13:33:19,000 "POST /student/create/ HTTP/1.1" 200 16592
+INFO 2024-03-17 13:33:24,974 "GET /student/list HTTP/1.1" 200 14991
+INFO 2024-03-17 13:33:26,517 "GET /student/create/ HTTP/1.1" 200 16377
+ERROR 2024-03-17 13:33:39,790 Internal Server Error: /student/create/
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'finance'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/messages/views.py", line 12, in form_valid
+    response = super().form_valid(form)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py", line 70, in get_absolute_url
+    return reverse("finance:create")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'finance' is not a registered namespace
+ERROR 2024-03-17 13:33:39,796 "POST /student/create/ HTTP/1.1" 500 128014
+INFO 2024-03-17 13:36:21,456 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:36:25,097 Watching for file changes with StatReloader
+INFO 2024-03-17 13:36:27,335 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:36:28,664 Watching for file changes with StatReloader
+INFO 2024-03-17 13:36:41,415 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:36:42,633 Watching for file changes with StatReloader
+INFO 2024-03-17 13:36:44,644 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:36:46,237 Watching for file changes with StatReloader
+INFO 2024-03-17 13:37:17,663 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:37:19,705 Watching for file changes with StatReloader
+INFO 2024-03-17 13:37:24,646 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:37:26,846 Watching for file changes with StatReloader
+INFO 2024-03-17 13:37:31,437 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:37:32,828 Watching for file changes with StatReloader
+INFO 2024-03-17 13:37:36,747 "POST /student/create/ HTTP/1.1" 200 16579
+INFO 2024-03-17 13:37:49,967 "GET /student/list HTTP/1.1" 200 15285
+INFO 2024-03-17 13:37:51,527 "GET /student/create/ HTTP/1.1" 200 16377
+ERROR 2024-03-17 13:38:00,279 Internal Server Error: /student/create/
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'finance'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/messages/views.py", line 12, in form_valid
+    response = super().form_valid(form)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py", line 71, in get_absolute_url
+    return redirect(reverse("finance:create",  kwargs={'student': self.pk} ))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'finance' is not a registered namespace
+ERROR 2024-03-17 13:38:00,281 "POST /student/create/ HTTP/1.1" 500 128250
+INFO 2024-03-17 13:41:16,456 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-03-17 13:41:19,513 Watching for file changes with StatReloader
+INFO 2024-03-17 13:41:23,282 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-03-17 13:41:24,627 Watching for file changes with StatReloader
+INFO 2024-03-17 13:41:41,056 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-03-17 13:41:43,748 Watching for file changes with StatReloader
+INFO 2024-03-17 13:43:10,320 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:43:12,170 Watching for file changes with StatReloader
+INFO 2024-03-17 13:43:13,748 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:43:14,746 Watching for file changes with StatReloader
+INFO 2024-03-17 13:43:18,715 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:43:20,686 Watching for file changes with StatReloader
+INFO 2024-03-17 13:44:08,495 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py changed, reloading.
+INFO 2024-03-17 13:44:09,451 Watching for file changes with StatReloader
+INFO 2024-03-17 13:44:19,408 "POST /student/create/ HTTP/1.1" 200 16588
+ERROR 2024-03-17 13:44:24,896 Internal Server Error: /student/create/
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'finance'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/contrib/messages/views.py", line 12, in form_valid
+    response = super().form_valid(form)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 136, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 65, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 125, in get_success_url
+    url = self.object.get_absolute_url()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/models.py", line 74, in get_absolute_url
+    return redirect(reverse('finance:invoice-create', kwargs={'user': self.pk}))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/openSourcesProjects/Django-School-Management-System/venv/lib/python3.11/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'finance' is not a registered namespace
+ERROR 2024-03-17 13:44:24,899 "POST /student/create/ HTTP/1.1" 500 128320
+INFO 2024-03-17 13:45:33,083 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/school_app/urls.py changed, reloading.
+INFO 2024-03-17 13:45:35,386 Watching for file changes with StatReloader
+INFO 2024-03-17 13:45:39,398 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/school_app/urls.py changed, reloading.
+INFO 2024-03-17 13:45:41,146 Watching for file changes with StatReloader

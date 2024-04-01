@@ -2,6 +2,7 @@ from django.core.validators import RegexValidator
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
+from django.shortcuts import redirect
 
 from apps.corecode.models import StudentClass
 from django.urls import reverse_lazy
@@ -52,6 +53,10 @@ class Student(models.Model):
     parent_mobile_number = models.CharField(
         validators       = [mobile_num_regex], max_length=13, blank=True, verbose_name="Contact parent"
     )
+    
+    second_parent_mobile_number = models.CharField(
+        validators       = [mobile_num_regex], max_length=13, blank=True, verbose_name="Autre Contact parent"
+    )
 
     has_learned_quran = models.CharField(max_length=20, choices=HAS_LEARNED_QURAN, default="yes", verbose_name="J'aide deja appris le Coran ", blank=True,)
     health_state      = models.CharField(max_length=20, choices=HEALTH_STATE_CHOICES,default="healthy", verbose_name="Etat de Sante")
@@ -65,9 +70,14 @@ class Student(models.Model):
     class Meta:
         ordering = ["name", "firstname" ]
 
-    def get_absolute_url(self):
+    def get_absolute_url2(self):
        return reverse("student-detail", kwargs={"pk": self.pk})
+       #return redirect(reverse("finance:create",  kwargs={'student': self.pk} ))
     
+    def get_absolute_url(self):
+        return reverse("student-detail", kwargs={"pk": self.pk})
+        #return redirect(reverse('finance:invoice-create', kwargs={'user': self.pk}))
+
     def save(self, *args, **kwargs):
         if not self.registration_number:
             # Get the latest student register number
@@ -82,7 +92,7 @@ class Student(models.Model):
             # Increment the numeric part
             new_number = last_number + 1
             # Format the new register number with the prefix and padded numeric part
-            self.registration_number = 'M-{0:03d}'.format(new_number)
+            self.registration_number = 'MIM-{0:03d}'.format(new_number)
         super().save(*args, **kwargs)
     
     def __str__(self):

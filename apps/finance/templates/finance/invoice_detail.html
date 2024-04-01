@@ -21,14 +21,15 @@
 
 <div class="row">
   <div class="col-sm-4">
-    <h3>{{ object }} </h3>
-    <h5>{{ object.session }} </h5>
-    <h5>{{ object.term }} </h5>
-    <h5>{{ object.class_for }} </h5>
-    <h6>Status: {{ object.get_status_display }} </h6>
+    <h4> Etudiant : {{ object }} </h4>
+    <h5> Année :   <b>  {{ object.session }}  </b> </h5>
+    <h5> Période : <b> {{ object.term }}  </b> </h5>
+    <h5> Classe :  <b> {{ object.class_for }} </b> </h5>
+    <h6> Status: <b> {{ object.get_status_display }} </b> </h6>
     <hr>
     <div>
-      <h4>Expected Balance: {{ object.balance | intcomma }}</h4>
+      <!--h4>Expected Balance: {{ object.balance | intcomma }}</!h4 -->
+      <h4> <b>Solde Restant :</b> {{ object.balance | intcomma }}</h4>
     </div>
   </div>
   <div class="col-sm-8">
@@ -79,7 +80,7 @@
 
 <hr>
 
-<h5>Payment History</h5>
+<h5>Historique de paiement</h5>
 <table class="table table-bordered table-sm">
   <thead class="thead-light">
     <tr>
