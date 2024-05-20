@@ -1,5 +1,58 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% load static %}
+
+<head>
+  <style>
+
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+    
+    .card-tools .btn-tool {
+      margin-left: 10px;
+    }
+    
+    .receipt-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    
+    .receipt-logo {
+      flex: 0 0 auto;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .receipt-title {
+      text-align: center;
+      flex-grow: 1;
+    }
+    
+    .receipt-title h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    .receipt-title h2 {
+      margin: 0;
+      font-size: 16px;
+      color: #666;
+    }
+    
+  </style>
+</head>
 
 {% block content-header %}
 <div class="card-header">
@@ -16,8 +69,29 @@
 {% endblock content-header %}
 
 
-
 {% block content %}
+
+<!-- Header for receipt details -->
+
+<div class="row align-items-center receipt-header">
+  <div class="col-md-3 text-left receipt-logo">
+    <div class="logo-container">
+      <img src="{% static 'dist/img/imam_logo.png' %}" alt="logo" width="180"/>
+    </div>
+  </div>
+  <div class="col-md-6 text-center receipt-title">
+    <h1>Imam School</h1>
+    <h2>
+      Contact: 123-456-7890<br>
+      B.P. Number: 12345<br>
+      Receipt Number: {{ object.receipt_number }}
+    </h2>
+  </div>
+  <div class="col-md-3 text-right receipt-extra">
+    <!-- Extra space or elements can go here -->
+  </div>
+</div>
+
 
 <div class="row">
   <div class="col-sm-4">

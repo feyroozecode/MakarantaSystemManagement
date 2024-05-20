@@ -1,0 +1,34 @@
+INFO 2024-05-19 17:14:05,542 Watching for file changes with StatReloader
+INFO 2024-05-19 17:14:11,726 "GET / HTTP/1.1" 302 0
+INFO 2024-05-19 17:14:11,834 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-05-19 17:14:12,268 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-05-19 17:14:12,269 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-05-19 17:14:12,271 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-05-19 17:14:12,273 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-05-19 17:14:12,277 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-05-19 17:14:12,297 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-05-19 17:14:12,339 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-05-19 17:14:12,339 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-05-19 17:14:12,342 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-05-19 17:14:12,348 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-05-19 17:14:12,349 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-05-19 17:14:12,575 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-05-19 17:14:12,578 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-05-19 17:14:13,113 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-05-19 17:14:16,874 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-05-19 17:14:16,901 "GET / HTTP/1.1" 200 11566
+INFO 2024-05-19 17:14:17,242 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-05-19 17:14:17,271 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-05-19 17:14:17,461 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-05-19 17:14:17,466 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-05-19 17:14:17,485 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-05-19 17:14:17,486 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-05-19 17:14:17,486 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-05-19 17:14:17,487 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-05-19 17:14:17,489 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-05-19 17:14:17,516 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-05-19 17:14:17,613 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-05-19 17:14:18,566 Not Found: /favicon.ico
+WARNING 2024-05-19 17:14:18,567 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-05-19 17:15:52,155 "GET /finance/list/ HTTP/1.1" 200 11668
+INFO 2024-05-19 17:15:55,689 "GET /finance/10/detail/ HTTP/1.1" 200 11818
