@@ -1,0 +1,346 @@
+INFO 2024-05-20 18:49:01,180 Watching for file changes with StatReloader
+INFO 2024-05-20 18:49:33,249 "GET / HTTP/1.1" 302 0
+INFO 2024-05-20 18:49:33,314 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-05-20 18:49:33,613 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-05-20 18:49:33,614 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-05-20 18:49:33,617 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-05-20 18:49:33,620 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-05-20 18:49:33,663 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-05-20 18:49:33,664 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-05-20 18:49:33,709 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-05-20 18:49:33,858 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-05-20 18:49:36,630 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-05-20 18:49:36,670 "GET / HTTP/1.1" 200 11566
+INFO 2024-05-20 18:49:36,894 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-05-20 18:49:36,910 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-05-20 18:49:39,362 "GET /finance/list/ HTTP/1.1" 200 11668
+ERROR 2024-05-20 18:49:41,890 Internal Server Error: /finance/10/detail/
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 43: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2024-05-20 18:49:41,967 "GET /finance/10/detail/ HTTP/1.1" 500 210477
+INFO 2024-05-20 18:50:35,519 "GET /finance/10/detail/ HTTP/1.1" 200 12220
+INFO 2024-05-20 18:50:50,854 "GET /finance/10/detail/ HTTP/1.1" 200 12220
+INFO 2024-05-20 18:50:56,901 "GET /finance/10/detail/ HTTP/1.1" 200 12220
+INFO 2024-05-20 18:53:31,456 "GET /finance/10/detail/ HTTP/1.1" 200 12220
+INFO 2024-05-20 18:53:39,210 Watching for file changes with StatReloader
+INFO 2024-05-20 18:57:14,820 "GET /finance/10/detail/ HTTP/1.1" 200 12220
+INFO 2024-05-20 18:59:51,723 "GET /finance/10/detail/ HTTP/1.1" 200 12156
+INFO 2024-05-20 19:00:50,444 "GET /finance/10/detail/ HTTP/1.1" 200 12175
+INFO 2024-05-20 19:01:10,293 "GET /finance/10/detail/ HTTP/1.1" 200 12203
+INFO 2024-05-20 19:01:24,988 "GET /finance/10/detail/ HTTP/1.1" 200 12213
+INFO 2024-05-20 19:01:32,823 "GET /finance/10/detail/ HTTP/1.1" 200 12214
+INFO 2024-05-20 19:01:37,566 "GET /finance/10/detail/ HTTP/1.1" 200 12214
+INFO 2024-05-20 19:06:22,871 "GET /finance/10/detail/ HTTP/1.1" 200 12214
+INFO 2024-05-20 19:07:09,952 "GET /finance/10/detail/ HTTP/1.1" 200 12218
+INFO 2024-05-20 19:11:47,872 "GET /finance/10/detail/ HTTP/1.1" 200 12386
+INFO 2024-05-20 19:22:55,559 "GET /finance/10/detail/ HTTP/1.1" 200 12724
+INFO 2024-05-25 16:40:03,898 Watching for file changes with StatReloader
+INFO 2024-05-25 16:40:43,236 "GET / HTTP/1.1" 302 0
+INFO 2024-05-25 16:40:43,902 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-05-25 16:40:44,847 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-05-25 16:40:44,907 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-05-25 16:40:44,918 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-05-25 16:40:44,919 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-05-25 16:40:44,968 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-05-25 16:40:44,988 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-05-25 16:40:46,951 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-05-25 16:40:47,009 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-05-25 16:40:47,032 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-05-25 16:40:47,036 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-05-25 16:40:47,037 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-05-25 16:40:47,042 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-05-25 16:40:47,050 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-05-25 16:40:47,051 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-05-25 16:41:35,439 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-05-25 16:41:35,537 "GET / HTTP/1.1" 200 11566
+INFO 2024-05-25 16:41:36,071 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-05-25 16:41:36,135 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-05-25 16:41:37,595 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-05-25 16:41:42,298 Not Found: /favicon.ico
+WARNING 2024-05-25 16:41:42,299 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-05-25 16:49:53,686 "GET /finance/list/ HTTP/1.1" 200 11668
+INFO 2024-05-25 16:49:57,789 "GET /finance/10/detail/ HTTP/1.1" 200 12724
+WARNING 2024-05-25 17:01:01,194 The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /finance/10/detail/
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database or disk is full
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/sessions/backends/db.py", line 86, in save
+    obj.save(
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 877, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 990, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1982, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database or disk is full
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/sessions/middleware.py", line 59, in process_response
+    request.session.save()
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/sessions/backends/db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/sessions/middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+WARNING 2024-05-25 17:01:01,241 "GET /finance/10/detail/ HTTP/1.1" 400 167041
+INFO 2024-05-25 17:03:10,594 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:03:18,691 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:03:35,457 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:03:39,014 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:03:53,682 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2024-05-25 17:03:54,101 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2024-05-25 17:03:54,123 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+INFO 2024-05-25 17:03:54,417 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+WARNING 2024-05-25 17:03:56,851 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:04:31,804 "GET /finance/9/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:04:37,838 "GET /finance/9/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:04:59,868 "GET /finance/9/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:05:23,089 "GET /finance/9/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:05:41,049 "GET /finance/9/detail/ HTTP/1.1" 200 0
+WARNING 2024-05-25 17:05:48,012 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:05:48,571 "GET /finance/list/ HTTP/1.1" 200 11668
+WARNING 2024-05-25 17:05:49,957 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:05:50,353 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:06:33,056 Watching for file changes with StatReloader
+INFO 2024-05-25 17:06:37,436 "GET /finance/10/detail/ HTTP/1.1" 200 0
+WARNING 2024-05-25 17:06:47,057 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+WARNING 2024-05-25 17:06:49,083 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:06:51,331 "GET /result/view/all HTTP/1.1" 200 9925
+WARNING 2024-05-25 17:06:52,573 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:06:57,658 "GET /finance/list/ HTTP/1.1" 200 11668
+WARNING 2024-05-25 17:06:59,261 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:07:01,244 "GET /finance/10/detail/ HTTP/1.1" 200 0
+INFO 2024-05-25 17:07:56,916 "GET /finance/10/detail/ HTTP/1.1" 200 12724
+WARNING 2024-05-25 17:07:59,846 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:09:48,586 "GET /finance/10/detail/ HTTP/1.1" 200 14158
+WARNING 2024-05-25 17:09:50,644 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-05-25 17:10:10,872 "GET /finance/10/detail/ HTTP/1.1" 200 14045
+INFO 2024-05-25 17:12:50,546 "GET /finance/10/detail/ HTTP/1.1" 200 14045
+INFO 2024-05-25 17:16:14,680 "GET /finance/10/detail/ HTTP/1.1" 200 14290
+INFO 2024-05-25 17:31:41,884 /Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/__init__.py changed, reloading.
+INFO 2024-05-25 17:31:46,523 Watching for file changes with StatReloader
+INFO 2024-05-26 14:04:04,153 Watching for file changes with StatReloader
+INFO 2024-05-26 14:04:35,243 "GET / HTTP/1.1" 302 0
+INFO 2024-05-26 14:04:35,414 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-05-26 14:04:47,659 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:04:47,846 "GET / HTTP/1.1" 200 11566
+INFO 2024-05-26 14:04:48,077 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-05-26 14:05:09,880 "GET /student/list HTTP/1.1" 200 16507
+INFO 2024-05-26 14:05:14,592 "GET /student/59/ HTTP/1.1" 200 13240
+INFO 2024-05-26 14:05:15,316 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2024-05-26 14:13:49,973 "GET /accounts/login/?next=/ HTTP/1.1" 200 4220
+INFO 2024-05-26 14:13:55,682 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:13:55,704 "GET / HTTP/1.1" 200 11566
+INFO 2024-05-26 14:14:04,870 "GET /student/list HTTP/1.1" 200 16507
+INFO 2024-05-26 14:14:11,932 "GET /student/59/ HTTP/1.1" 200 13240
+INFO 2024-05-26 14:14:24,893 "GET /student/create/ HTTP/1.1" 200 16706
+INFO 2024-05-26 14:15:42,224 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:15:42,250 "GET /student/60/ HTTP/1.1" 200 12857
+INFO 2024-05-26 14:15:42,507 "GET /media/students/passports/Image_WhatsApp_Mai_19.jpeg HTTP/1.1" 200 67913
+INFO 2024-05-26 14:15:53,774 "GET /student/list HTTP/1.1" 200 16817
+INFO 2024-05-26 14:16:05,703 "GET /student/60/ HTTP/1.1" 200 12711
+INFO 2024-05-26 14:16:05,808 "GET /media/students/passports/Image_WhatsApp_Mai_19.jpeg HTTP/1.1" 304 0
+INFO 2024-05-26 14:16:21,591 "GET /staff/list/ HTTP/1.1" 200 10373
+INFO 2024-05-26 14:16:26,578 "GET /staff/create/ HTTP/1.1" 200 13312
+INFO 2024-05-26 14:16:31,071 "GET /finance/list/ HTTP/1.1" 200 11668
+INFO 2024-05-26 14:16:37,512 "GET /finance/10/detail/ HTTP/1.1" 200 14290
+INFO 2024-05-26 14:16:48,155 "GET /finance/receipt/create?invoice=10 HTTP/1.1" 200 11562
+INFO 2024-05-26 14:16:55,285 "GET /finance/9/detail/ HTTP/1.1" 200 14294
+INFO 2024-05-26 14:17:02,970 "GET /finance/9/update/ HTTP/1.1" 200 16074
+INFO 2024-05-26 14:17:28,465 "POST /finance/9/update/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:17:28,510 "GET /finance/9/detail/ HTTP/1.1" 200 14281
+INFO 2024-05-26 14:17:38,792 "GET /finance/9/update/ HTTP/1.1" 200 16074
+INFO 2024-05-26 14:17:41,807 "GET /smssender/send-sms/ HTTP/1.1" 200 12659
+INFO 2024-05-26 14:18:42,189 "GET /class/list/ HTTP/1.1" 200 12391
+INFO 2024-05-26 14:18:46,372 "GET /session/list/ HTTP/1.1" 200 12970
+INFO 2024-05-26 14:18:58,831 "GET /session/3/update/ HTTP/1.1" 200 10863
+INFO 2024-05-26 14:19:02,147 "POST /session/3/update/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:19:02,175 "GET /session/list/ HTTP/1.1" 200 13114
+INFO 2024-05-26 14:19:05,989 "GET /term/list/ HTTP/1.1" 200 12604
+INFO 2024-05-26 14:19:16,230 "GET /subject/list/ HTTP/1.1" 200 12937
+INFO 2024-05-26 14:19:28,254 "POST /subject/create/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:19:28,284 "GET /subject/list/ HTTP/1.1" 200 13366
+INFO 2024-05-26 14:19:32,382 "GET /result/create/ HTTP/1.1" 200 14710
+INFO 2024-05-26 14:19:41,584 "POST /result/create/ HTTP/1.1" 200 12328
+INFO 2024-05-26 14:19:50,447 "POST /result/create/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:19:50,688 "GET /result/edit-results/ HTTP/1.1" 200 50317
+INFO 2024-05-26 14:20:23,336 "POST /result/edit-results/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:20:23,584 "GET /result/edit-results/ HTTP/1.1" 200 50466
+INFO 2024-05-26 14:20:26,656 "GET /result/view/all HTTP/1.1" 200 98377
+INFO 2024-05-26 14:20:57,488 "GET /result/view/all HTTP/1.1" 200 98377
+INFO 2024-05-26 14:20:59,107 "GET /result/edit-results/ HTTP/1.1" 200 50323
+INFO 2024-05-26 14:21:12,394 "POST /result/edit-results/ HTTP/1.1" 302 0
+INFO 2024-05-26 14:21:12,669 "GET /result/edit-results/ HTTP/1.1" 200 50466
+INFO 2024-05-26 14:21:14,640 "GET /result/view/all HTTP/1.1" 200 98377
+INFO 2024-05-26 14:21:32,373 "GET /site-config HTTP/1.1" 200 11548
+INFO 2024-05-26 14:21:48,677 "GET /student/list HTTP/1.1" 200 16817
+INFO 2024-05-26 14:22:19,579 "GET /student/upload/ HTTP/1.1" 200 10687
+ERROR 2024-05-26 14:22:27,012 Internal Server Error: /student/upload/
+Traceback (most recent call last):
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/views/generic/edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/contrib/messages/views.py", line 12, in form_valid
+    response = super().form_valid(form)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/views/generic/edit.py", line 135, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/forms/models.py", line 542, in save
+    self.instance.save()
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/dispatch/dispatcher.py", line 176, in send
+    return [
+           ^
+  File "/Users/macbookair/anaconda3/lib/python3.11/site-packages/django/dispatch/dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macbookair/dev/pythonProjects/solutions/MakarantaSystemManagement/apps/students/signals.py", line 16, in create_bulk_student
+    opened = StringIO(instance.csv_file.read().decode())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf6 in position 10: invalid start byte
+ERROR 2024-05-26 14:22:27,017 "POST /student/upload/ HTTP/1.1" 500 128087
+INFO 2024-05-26 14:22:52,376 "GET /student/60/ HTTP/1.1" 200 12711
+INFO 2024-05-26 14:22:52,534 "GET /media/students/passports/Image_WhatsApp_Mai_19.jpeg HTTP/1.1" 304 0
