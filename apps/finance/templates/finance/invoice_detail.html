@@ -60,14 +60,13 @@
       width: 75%;
     }
 
-    .receipt-section {
-      background: #f1f1f1;
-      padding: 10px;
-      margin-bottom: 10px;
+    .receipt-content {
       border: 1px solid #007bff;
       border-radius: 5px;
+      background: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
     }
-
     .school-logo {
       width: 100px;
       height: auto;
@@ -122,6 +121,10 @@
     .table th,
     .table td {
       vertical-align: middle;
+    }
+
+    .transparent-border {
+      border: 1px solid transparent !important;
     }
 
     @media (max-width: 768px) {
@@ -191,7 +194,7 @@
     
     <div class="receipt-content">
       <td>  Date:<strong> {{ receipt_date }} </strong> </td>  <br/>
-      <table class="table table-bordered table-sm">
+      <table class="table table-bordered table-sm transparent-border ">
         <tbody>
           <tr>
             <td class="text-left">Nom et prénom:  </strong> </td>
