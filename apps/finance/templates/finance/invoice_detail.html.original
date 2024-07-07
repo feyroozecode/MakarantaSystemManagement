@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+
+<head>
+  <style>
+
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .card-tools .btn-tool {
+      margin-left: 10px;
+    }
+
+    .receipt-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .receipt-logo {
+      flex: 0 0 auto;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .receipt-title {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .receipt-title h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .receipt-title h2 {
+      margin: 0;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .receipt-content {
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background: #f9f9f9;
+      width: 75%;
+    }
+
+    .receipt-content {
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .school-logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .receipt-content .row {
+      margin-bottom: 15px;
+    }
+
+    .receipt-content p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .receipt-content .text-center {
+      text-align: center;
+    }
+
+    .receipt-content .text-right {
+      text-align: right;
+    }
+
+    .receipt-content .col-6,
+    .receipt-content .col-12 {
+      display: flex;
+      align-items: center;
+    }
+
+    .receipt-content .col-6 {
+      justify-content: space-between;
+    }
+
+    .receipt-content .col-12 {
+      justify-content: center;
+    }
+
+    .receipt-content .text-right p {
+      margin-left: auto;
+    }
+
+    .receipt-content .arabic-text {
+      font-family: 'Amiri', serif;
+      direction: rtl;
+    }
+
+    .receipt-content hr {
+      margin: 20px 0;
+      border: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .table th,
+    .table td {
+      vertical-align: middle;
+    }
+
+    .transparent-border {
+      border: 1px solid transparent !important;
+    }
+
+    @media (max-width: 768px) {
+      .receipt-content {
+        width: 100%;
+      }
+    }
+
+    .transparent-border td, .transparent-border th {
+      border: none;
+    }
+
+    .strong-value {
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .receipt-content .col-6 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .receipt-content .col-6.text-right {
+        align-items: flex-end;
+      }
+    }
+        
+  </style>
+</head>
+
+{% block content-header %}
+<div class="card-header">
+  <div class="card-tools">
+    <a href="#" class="btn btn-tool" onclick="printReceipt()">Print</a>
+    <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
+      <i class="fas fa-edit"></i>
+    </a>
+    <a href="{% url 'invoice-delete' object.id %}" class="btn btn-tool">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+</div>
+{% endblock content-header %}
+
+{% block content %}
+<!-- Header for receipt details -->
+<div id="receipt-content">
+
+  <div id="receipt-content" class="container">
+    <div class="row align-items-center receipt-header">
+      <div class="col-md-3 text-left receipt-logo">
+        <div class="logo-container">
+          <img src="{% static 'dist/img/imam_logo.png' %}" alt="logo" width="180" />
+        </div>
+      </div>
+      <div class="col-md-6 text-center receipt-title">
+        <h1>Méderssa Imam Malick</h1>
+        <h2>
+          Tel: (227) 99 99 89 80 / 94 80 03 33<br>
+          B.P : 11889 | Niamey, Niger <br>
+         
+        </h2>
+      </div>
+     
+      <div class="col-md-3 text-right receipt-extra" style="padding-right: 50px; padding-top:30px">
+        Numéro récu :  {{ object.receipt_number }}
+      </div>
+    </div>
+    
+    <div class="receipt-content">
+      <td>  Date:<strong> {{ receipt_date }} </strong> </td>  <br/>
+      <table class="table table-bordered table-sm transparent-border ">
+        <tbody>
+          <tr>
+            <td class="text-left">Nom et prénom:  </strong> </td>
+            <td class="text-center"> <strong> {{ object }}  </td>
+            <td class="text-right arabic-text"> الإسم واللقب </td>
+          </tr>
+          <tr>
+            <td>Niveau de l'étudiant: </strong> </td>
+            <td class="text-center"> <strong> {{ object.class_for }}  </td>
+            <td class="text-right arabic-text"><strong>مستوى الطالب</strong> {{ student.level_ar }} </td>
+          </tr>
+          <tr>
+            <td>Année académique: </strong> </td>
+            <td class="text-center">  <strong>  {{ object.session }}   </strong> </td>
+            <td class="text-right arabic-text"><strong>السنة الأكاديمية </strong> {{ student.year_ar }} </td>
+          </tr>
+            <!-- 
+          <tr>
+            <td colspan="2"><strong>Montant en lettre:</strong>   </td>
+          </tr>
+       
+          <tr>
+            <td><strong>Rest à payer:</strong> {{ object.balance | intcomma }} </td>
+            <td class="text-right arabic-text"><strong>الباقي للدفع:</strong> {{ balance_due }}</td>
+          </tr>
+          
+          <tr>
+            <td><strong>Motif:</strong> {{ reason }}</td>
+            <td class="text-right arabic-text"><strong>السبب</strong> {{ reason }}</td>
+          </tr>
+          -->
+         
+        </tbody>
+      </table>
+  
+      <!-- 
+      <div class="row">
+        <div class="col-12">
+          <h4 class="text-center">Etudiant: {{ object }}</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Année: <b>{{ object.session }}</b></h5>
+              <h5>Période: <b>{{ object.term }}</b></h5>
+              <h5>Classe: <b>{{ object.class_for }}</b></h5>
+              <h6>Status: <b>{{ object.get_status_display }}</b></h6>
+            </div>
+            <div class="col-md-6 text-right">
+              <h4><b>Solde Restant:</b> {{ object.balance | intcomma }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+     
+    <table class="table table-sm table-bordered">
+        
+        <thead class="thead-light">
+          <tr>
+            <th>S/N</th>
+            <th>Description</th>
+            <th>Montant</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.amount }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>Montant total de ce terme</td>
+            <td>{{ object.amount_payable | intcomma }}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Solde du trimestre précédent</td>
+            <td>{{ object.balance_from_previous_term | intcomma }}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Montant total a payer</td>
+            <td>{{ object.total_amount_payable | intcomma }}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Montant total payé</td>
+            <td>{{ object.total_amount_paid | intcomma }}</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      
+        <div class="text-right" style="padding-top: 10; padding-left: 10"><strong>Signature:</strong></div>
+      
+
+      <hr>
+
+     
+  </div>
+
+  
+</div>
+
+<!-- 
+<div>
+  <h5>Historique de paiement</h5>
+  <table class="table table-bordered table-sm">
+    <thead class="thead-light">
+      <tr>
+        <th>S/N</th>
+        <th>Montant Payé</th>
+        <th>Date de paiement</th>
+        <th>Commentaire</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for receipt in receipts %}
+      <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ receipt.amount_paid }}</td>
+        <td>{{ receipt.date_paid }}</td>
+        <td>{{ receipt.comment }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+-->
+
+<script>
+  function printReceipt() {
+      var printContents = document.getElementById('receipt-content').innerHTML;
+      var originalContents = document.body.innerHTML;
+  
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+  }
+</script>
+
+{% endblock content %}
