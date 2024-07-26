@@ -57,6 +57,7 @@ class InvoiceItem(models.Model):
 
 
 class Receipt(models.Model):
+    current_date = timezone.now()
     invoice = models.ForeignKey(Invoice, on_delete=models.CASCADE)
     amount_paid = models.IntegerField()
     date_paid = models.DateField(default=timezone.now)
