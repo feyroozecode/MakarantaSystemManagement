@@ -4,7 +4,8 @@
 {% block content-header %}
 <div class="card-header">
   <div class="card-tools">
-    <a href="#" class="btn btn-tool">Print</a>
+    
+    <a href="#" class="btn btn-tool">Imprimer</a>
     <a href="{% url 'student-update' object.id %}" class="btn btn-tool">
       <i class="fas fa-edit"></i>
     </a>
@@ -108,6 +109,14 @@
       
     </div>
 
+    <hr>
+    <div class="card-header">
+  <div class="card-tools">
+    
+    <a href="http://127.0.0.1:8000/finance/create/" class="btn btn-primary">Passer au paiement </a>
+   
+  </div>
+</div>
     <hr>
     {% if payments %}
     <h4>Facture / Historique de paiement</h4>

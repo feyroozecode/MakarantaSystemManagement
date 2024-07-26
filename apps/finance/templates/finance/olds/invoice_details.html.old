@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+
+<head>
+  <style>
+
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+    
+    .card-tools .btn-tool {
+      margin-left: 10px;
+    }
+    
+    .receipt-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    
+    .receipt-logo {
+      flex: 0 0 auto;
+    }
+    
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .receipt-title {
+      text-align: center;
+      flex-grow: 1;
+    }
+    
+    .receipt-title h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    .receipt-title h2 {
+      margin: 0;
+      font-size: 16px;
+      color: #666;
+    }
+
+    /* General styling for the receipt */
+.receipt-content {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.receipt-header {
+  margin-bottom: 20px;
+}
+
+.school-logo {
+  width: 100px;
+  height: auto;
+}
+
+.receipt-content .row {
+  margin-bottom: 15px;
+}
+
+.receipt-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.receipt-content .text-center {
+  text-align: center;
+}
+
+.receipt-content .text-right {
+  text-align: right;
+}
+
+.receipt-content .col-6,
+.receipt-content .col-12 {
+  display: flex;
+  align-items: center;
+}
+
+.receipt-content .col-6 {
+  justify-content: space-between;
+}
+
+.receipt-content .col-12 {
+  justify-content: center;
+}
+
+.receipt-content .text-right p {
+  margin-left: auto;
+}
+
+/* Styling for Arabic text */
+.receipt-content .arabic-text {
+  font-family: 'Amiri', serif; /* Use a good Arabic font */
+  direction: rtl;
+}
+
+/* Adding some visual separation for different sections */
+.receipt-content hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .receipt-content .col-6 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .receipt-content .col-6.text-right {
+    align-items: flex-end;
+  }
+}
+    
+  </style>
+</head>
+
+{% block content-header %}
+<div class="card-header">
+  <div class="card-tools">
+    <a href="#" class="btn btn-tool" onclick="printReceipt()">Print</a>
+    <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
+      <i class="fas fa-edit"></i>
+    </a>
+    <a href="{% url 'invoice-delete' object.id %}" class="btn btn-tool">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+</div>
+{% endblock content-header %}
+
+
+{% block content %}
+
+<!-- Header for receipt details -->
+
+<div class="row align-items-center receipt-header">
+  <div class="col-md-3 text-left receipt-logo">
+    <div class="logo-container">
+      <img src="{% static 'dist/img/imam_logo.png' %}" alt="logo" width="180"/>
+    </div>
+  </div>
+  <div class="col-md-6 text-center receipt-title">
+    <h1>Imam School</h1>
+    <h2>
+      Contact: 123-456-7890<br>
+      B.P. Number: 12345<br>
+      Receipt Number: {{ object.receipt_number }}
+    </h2>
+  </div>
+  <div class="col-md-3 text-right receipt-extra">
+
+    <!-- Extra space or elements can go here -->
+  </div>
+  <div class="receipt-content">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-right">B.P.F</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Nom et prénom:</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>الاسم الكامل:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>{{ student.name }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Niveau de l'étudiant: {{ student.level }}</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>مستوى الطالب: {{ student.level_ar }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Année académique: {{ student.year }}</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>السنة الأكاديمية: {{ student.year_ar }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p>Montant en lettre: {{ amount_in_words }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Motif:</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>الباقي للدفع: {{ balance_due }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Date: {{ receipt_date }}</p>
+      </div>
+      <div class="col-6 text-right">
+        <p>Signature:</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-4">
+    <h4> Etudiant : {{ object }} </h4>
+    <h5> Année :   <b>  {{ object.session }}  </b> </h5>
+    <h5> Période : <b> {{ object.term }}  </b> </h5>
+    <h5> Classe :  <b> {{ object.class_for }} </b> </h5>
+    <h6> Status: <b> {{ object.get_status_display }} </b> </h6>
+    <hr>
+    <div>
+      <!--h4>Expected Balance: {{ object.balance | intcomma }}</!h4 -->
+      <h4> <b>Solde Restant :</b> {{ object.balance | intcomma }}</h4>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <table class="table table-sm table-bordered">
+      Invoice Breakdown</br>
+      <thead class="thead-light">
+        <tr>
+          <th>S/N</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>{{ forloop.counter }} </td>
+          <td>{{ item.description }} </td>
+          <td>{{ item.amount }} </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>Total Amount this term</td>
+          <td>{{ object.amount_payable | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Balance from previous term</td>
+          <td>{{ object.balance_from_previous_term | intcomma }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total Amount Payable</td>
+          <td>{{ object.total_amount_payable | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total Amount Paid</td>
+          <td>{{ object.total_amount_paid | intcomma}}</td>
+        </tr>
+
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<h5>Historique de paiement</h5>
+<table class="table table-bordered table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th>S/N</th>
+      <th>Montant Payé</th>
+      <th>Date de paiement</th>
+      <th>Commentaire</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for receipt in receipts %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ receipt.amount_paid}}</td>
+      <td>{{ receipt.date_paid}}</td>
+      <td>{{ receipt.comment}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<script>
+  function printReceipt() {
+      var printContents = document.getElementById('receipt-content').innerHTML;
+      var originalContents = document.body.innerHTML;
+  
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+  }
+  </script>
+
+  
+{% endblock content %}
+
