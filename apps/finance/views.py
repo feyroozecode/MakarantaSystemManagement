@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse
+from django.utils import timezone
 
 from apps.students.models import Student
 
@@ -23,6 +24,7 @@ class InvoiceCreateView(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(InvoiceCreateView, self).get_context_data(**kwargs)
+        context['current_date'] = timezone.now()
         if self.request.POST:
             context["items"] = InvoiceItemFormset(
                 self.request.POST, prefix="invoiceitem_set"
@@ -103,6 +105,8 @@ class ReceiptCreateView(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(ReceiptCreateView, self).get_context_data(**kwargs)
+        current_date = timezone.now()
+        context["current_date"] = current_date
         invoice = Invoice.objects.get(pk=self.request.GET["invoice"])
         context["invoice"] = invoice
         return context

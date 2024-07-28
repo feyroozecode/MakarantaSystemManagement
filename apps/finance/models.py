@@ -27,6 +27,7 @@ class Invoice(models.Model):
     def balance(self):
         payable = self.total_amount_payable()
         paid = self.total_amount_paid()
+
         return payable - paid
 
     def amount_payable(self):
@@ -62,6 +63,6 @@ class Receipt(models.Model):
     amount_paid = models.IntegerField()
     date_paid = models.DateField(default=timezone.now)
     comment = models.CharField(max_length=200, blank=True)
-
+    
     def __str__(self):
         return f"Receipt on {self.date_paid}"

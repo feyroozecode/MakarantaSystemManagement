@@ -11,10 +11,13 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import environ 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+env = environ.Env()
+environ.Env.read_env()  # Read the .env file
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -42,7 +45,8 @@ INSTALLED_APPS = [
     "apps.staffs",
     "apps.finance",
     "apps.result",
-    "apps.smssender"
+    "apps.smssender",
+    "utils"
 ]
 
 MIDDLEWARE = [
@@ -193,3 +197,16 @@ LOGGING = {
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
 # Site Default values
+# Initialize environment variables
+#print("Environment Variables:", dict(os.environ))
+#SMS_API_ENDPOINT = env('SMS_API_URL')
+#SMS_API_SENDER_NAME = env('SMS_API_SENDER_NAME')
+
+
+# Get the API endpoint from environment variables
+# try:
+#     SMS_API_ENDPOINT = env('SMS_API_ENDPOINT')
+#     print(f"SMS_API_ENDPOINT: {SMS_API_ENDPOINT}")
+# except environ.ImproperlyConfigured as e:
+#     print("Error:", e)
+#     SMS_API_ENDPOINT = 'https://default-api.example.com/send_sms'  # Fallback value

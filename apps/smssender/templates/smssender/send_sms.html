@@ -2,13 +2,22 @@
 
 {% block content %}
 
+<head>
+
+<!-- Include Toastr CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+ 
 <style>
     body {
         background-color: #f8f9fa;
     }
 
     .container {
-        margin-top: 50px;
+        margin-top: 30px;
+        height: 80vh;
     }
 
     .card {
@@ -22,7 +31,8 @@
     }
 
     .card-body {
-        padding: 20px;
+        padding: 15px;
+        margin-right: 10px;
     }
 
     .form-control {
@@ -38,27 +48,161 @@
     .btn-primary:hover {
         background-color: #0056b3;
     }
+
+    .suggestions {
+        max-height: 600px; /* Adjust this height as needed */
+        overflow-y: auto;
+        padding-right: 10px; /* To prevent content from being hidden by the scrollbar */
+        padding-left: 10px; /* To prevent content from being hidden by the scrollbar */
+    }
+
+    .suggestion {
+        padding: 10px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        background-color: #e9f7fd;
+        margin-bottom: 10px;
+    }
+
+    .suggestion p {
+        margin: 0;
+        color: #007bff;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .message-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .selected-students {
+
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .chip {
+        display: inline-block;
+        padding: 0 10px;
+        margin: 2px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .chip .close-btn {
+        margin-left: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+     .btn-send-sms {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn-send-sms:hover {
+        background-color: #0056b3;
+      }
 </style>
+
+</head>
 
 <div class="container">
     <div class="row">
-         <div class="col-md-6 offset-md-3">
+        <!-- Main column for sending messages -->
+        <div class="col-md-6 offset-md-1">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Send SMS</h3>
+                    <h3 class="card-title">Envoyer un SMS</h3>
                 </div>
-                 <div class="card-body">
-                    <form method="post">
+                <div class="card-body message-form-container">
+                    <form method="post" id="smsForm">
                         {% csrf_token %}
                         {{ form.errors }}
-                        {{ form.contact.errors }}
-                        {{ form.as_p }}
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        {{ form.non_field_errors }}
+                        <div class="form-group">
+                            <label for="students">Sélectionnez les étudiants</label>
+                            {{ form.students }}
+                            <div class="selected-students" id="selectedStudents">
+                                <!-- Selected students will be displayed here as chips -->
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message personnalisé (optionnel)</label>
+                            {{ form.message }}
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-send-sms">Envoyer le message</button>
                     </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column for suggestions -->
+        <div class="col-md-4">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h5>Propositions de SMS :</h5>
+                </div>
+                <div class="card-body suggestions">
+                    <div class="grid-container">
+                        {% for  message in base_sms %}
+                            <div class="suggestion">
+                                <input type="radio" id="suggestion{{ idx }}" name="selected_sms" value="{{ message }}" {% if forloop.first %}checked{% endif %} onclick="populateMessage('{{ message }}')">
+                                <label for="suggestion{{ idx }}"><p>{{ message|linebreaksbr }}</p></label>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+
+function showToast() {
+    toastr.success('This is a success message!', 'Success');
+  }
+  
+    function populateMessage(message) {
+        document.getElementById('id_message').value = message.replace(/<br>/g, "\n");
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const firstSuggestion = document.querySelector('input[name="selected_sms"]:checked');
+        if (firstSuggestion) {
+            populateMessage(firstSuggestion.value);
+        }
+
+        const studentSelect = document.getElementById('id_students');
+        const selectedStudentsDiv = document.getElementById('selectedStudents');
+
+        studentSelect.addEventListener('change', function() {
+            const selectedOptions = Array.from(studentSelect.selectedOptions);
+            selectedStudentsDiv.innerHTML = '';
+            selectedOptions.forEach(option => {
+                const chip = document.createElement('div');
+                chip.className = 'chip';
+                chip.innerHTML = `${option.text} <span class="close-btn">&times;</span>`;
+                chip.querySelector('.close-btn').addEventListener('click', () => {
+                    option.selected = false;
+                    chip.remove();
+                });
+                selectedStudentsDiv.appendChild(chip);
+            });
+        });
+    });
+</script>
 
 {% endblock %}
