@@ -6,19 +6,15 @@ from apps.students.models import Student
 from .models import SMSContact, SMSMessage
 
 
-class SMSMessageForm(forms.ModelForm):
-    class Meta:
-        model = SMSMessage
-        fields = ['contact', 'message']
-
-    contact = forms.ModelChoiceField(
+class SMSMessageForm(forms.Form):
+    students = forms.ModelMultipleChoiceField(
         queryset=Student.objects.all(),
-        label='Selectionner l\'étudiant',
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.SelectMultiple(attrs={'class': 'form-control'}),
+        label='Sélectionnez les étudiants'
+    )
+    message = forms.CharField(
+        widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
+        label='Message personnalisé',
+        required=False
     )
     
-    message = forms.CharField(
-        label='Message',
-        widget=forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
-    )
-     
