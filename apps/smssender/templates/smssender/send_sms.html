@@ -142,8 +142,7 @@
                             <label for="message">Message personnalisé (optionnel)</label>
                             {{ form.message }}
                         </div>
-                        <button type="submit" class="btn btn-primary btn-send-sms">Envoyer le message</button>
-                    </form>
+                        <button type="button" class="btn btn-primary btn-send-sms" onclick="sendSMS()">Envoyer le message </button>
                 </div>
             </div>
         </div>
@@ -174,10 +173,17 @@
 function showToast() {
     toastr.success('This is a success message!', 'Success');
   }
-  
+
     function populateMessage(message) {
         document.getElementById('id_message').value = message.replace(/<br>/g, "\n");
     }
+
+    /// disable submit button on form submit
+    document.getElementById('smsForm').addEventListener('submit', function(event) {
+        var submitButton = document.querySelector('.btn-send-sms');
+        submitButton.disabled = true;
+        submitButton.value = 'Envoi en cours...';
+    });
 
     document.addEventListener('DOMContentLoaded', function() {
         const firstSuggestion = document.querySelector('input[name="selected_sms"]:checked');
@@ -203,6 +209,7 @@ function showToast() {
             });
         });
     });
+
 </script>
 
 {% endblock %}
