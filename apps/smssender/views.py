@@ -19,7 +19,6 @@ def send_sms(request):
         if form.is_valid():
             form = SMSMessageForm(request.POST)
         if form.is_valid():
-            
             # Get the selected student from the form
             selected_student_id = form.cleaned_data['student']
             selected_student = Student.objects.get(id=selected_student_id)
