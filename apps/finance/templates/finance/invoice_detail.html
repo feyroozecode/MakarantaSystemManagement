@@ -158,17 +158,18 @@
 <div class="card-header">
   <div class="page-tools card-tools">
     <div class="action-buttons">
-      <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Print" onclick="printReceipt()">
+      <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Imprimer" onclick="printReceipt()">
         <i class="mr-1 fa fa-print text-primary-m1 text-120 w-2"></i>
         Imprimer
       </a>
-      <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
-        <i class="fas fa-edit">Modifier</i>
+      <a class="btn bg-white btn-light mx-1px text-95" href="{% url 'invoice-update' object.id %}" data-title="Modifier" class="btn btn-tool">
+        <i class="mr-1 fas fa-edit text-120 w-2">Modifier</i>
       </a>
-      <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
-        <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2"></i>
-        Exporter
-      </a>
+      <!-- a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
+        <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2">Exporter</i>
+        
+      </a -->
+
     </div>
   </div>
 </div>
@@ -218,7 +219,7 @@
                 <div class="mt-1 mb-2 text-secondary-m1 text-600 text-125">
                   Récu
                 </div>
-                <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span class="text-600 text-90">Récu de paiement N°:</span> #111-222</div>
+                <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span class="text-600 text-90">Récu de paiement N°:</span> {{ receipt_number }} </div>
                 <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1 flex-end"></i> <span class="text-600 text-90">Status:</span> <span class="badge badge-warning badge-pill px-25">Payée</span></div>
               </div>
             </div>
@@ -308,7 +309,7 @@
         </div>
 
       </div>
-        <div class="text-600 text-90">Date de paiement : {{ receipt.current_date }}</div>
+        <div class="text-600 text-90">Date de paiement : {{ current_date }}</div>
         <div class="d-flex justify-content-end col-10" style=" padding-right: 10px;">Signature:</div>
     </div>
   </div>
