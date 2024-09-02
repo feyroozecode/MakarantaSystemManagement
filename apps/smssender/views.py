@@ -8,15 +8,18 @@ import json
 from .forms import SMSMessageForm
 
 
-
-
 def send_sms(request):
     base_sms = [
-    "Assalam Aleykoum,Merci de régler les frais d'inscription et d'avance pour [raison]. Pour toute question, contactez-nous. Cordialement, Méderssa Coranique Imam Malick",
-    "Assalam Aleykoum, Votre enfant, [nom de l'élève], est exclu temporairement pour [raison]. Veuillez nous contacter. Cordialement, Méderssa Coranique Imam Malick",
-    "Assalam Aleykoum, Nous remarquons des absences fréquentes de votre enfant. Merci de nous contacter.Cordialement,Méderssa Coranique Imam Malick"
-]
-     
+        "Assalam Aleykoum,Merci de régler les frais d'inscription et d'avance pour [raison]. Pour toute question, contactez-nous. Cordialement, Méderssa Coranique Imam Malick",
+        "Assalam Aleykoum, Votre enfant, [nom de l'élève], est exclu temporairement pour [raison]. Veuillez nous contacter. Cordialement, Méderssa Coranique Imam Malick",
+        "Assalam Aleykoum, Nous remarquons des absences fréquentes de votre enfant. Merci de nous contacter.Cordialement,Méderssa Coranique Imam Malick"
+    ]
+    
+    base_name = ""
+    accountId = ""
+    password = ""
+    sender = ""
+
     if request.method == 'POST':
         form = SMSMessageForm(request.POST)
         if form.is_valid():
@@ -26,10 +29,6 @@ def send_sms(request):
             
             for student in selected_students:
                 parent_phone_number = student.parent_mobile_number
-                
-                accountId = "AlfajerApps"
-                password = "Cohmii5owoow"
-                sender = "Imam Malick"
 
                 data = {
                     "accountid": accountId,
@@ -47,7 +46,7 @@ def send_sms(request):
                 headers = {'Content-Type': 'application/json'}
                 
                 try:
-                    baseURL = "https://lamsms.lafricamobile.com/api"
+                    baseURL = base_name
                     response = requests.post(baseURL, headers=headers, json=data)
                     print("response", response)
                     print(json.dumps(data, indent=4))

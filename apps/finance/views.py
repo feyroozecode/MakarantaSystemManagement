@@ -6,6 +6,7 @@ from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse
 from django.utils import timezone
+from datetime import datetime
 
 from apps.students.models import Student
 
@@ -52,7 +53,19 @@ class InvoiceDetailView(LoginRequiredMixin, DetailView):
         context = super(InvoiceDetailView, self).get_context_data(**kwargs)
         context["receipts"] = Receipt.objects.filter(invoice=self.object)
         context["items"] = InvoiceItem.objects.filter(invoice=self.object)
-        
+      
+        context["current_date"] = timezone.now().strftime('%d/%m/%Y')
+        # Generate a unique receipt number
+        last_receipt = Receipt.objects.order_by('id').last()
+        if last_receipt:
+            next_number = last_receipt.id + 1
+        else:
+            next_number = 1
+
+        year_suffix = timezone.now().strftime('%y')
+        receipt_number = f"REC/{year_suffix}-{next_number}"
+        context["receipt_number"] = receipt_number
+
         return context
 
 
