@@ -22,7 +22,8 @@ class Invoice(models.Model):
         ordering = ["student", "term"]
 
     def __str__(self):
-        return f"{self.student}"
+        return f"{self.student} "
+       # return f"{self.student} {self.firstname} ({self.registration_number}) ({self.student.registration_number}) ({self.student.parent_mobile_number})"
 
     def balance(self):
         payable = self.total_amount_payable()
