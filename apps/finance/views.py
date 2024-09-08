@@ -60,7 +60,7 @@ class InvoiceDetailView(LoginRequiredMixin, DetailView):
         if last_receipt:
             next_number = last_receipt.id + 1
         else:
-            next_number = 1
+            next_number =  last_receipt.id + 1
 
         year_suffix = timezone.now().strftime('%y')
         receipt_number = f"REC/{year_suffix}-{next_number}"
