@@ -151,6 +151,30 @@
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    @media print {
+      @media print {
+      .invoice-details-header {
+        display: block; /* Ensure the header displays correctly */
+      }
+      .invoice-details-header .row {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow wrapping */
+      }
+      .invoice-details-header .col-1,
+      .invoice-details-header .col-5,
+      .invoice-details-header .col-2 {
+        flex: 1; /* Equal width for all columns */
+        padding: 10px; /* Add padding for spacing */
+      }
+      .invoice-details-header .text-white {
+        color: #fff; /* Ensure text color is white */
+      }
+      .invoice-details-header {
+        background-color: #000; /* Set background color for print */
+      }
+    }
+    }
+
   </style>
 </head>
 
@@ -243,7 +267,7 @@
             Niveau de l'élève : <span class="text-bold"> {{ object.class_for }} </span>
           </div>
 
-          <div class="mt-3">
+          <div class="mt-3 invoice-details-header">
             <div class="row text-600 text-white bg-black bgc-default-tp1 py-25">
               <div class="d-none d-sm-block col-1">#</div>
               <div class="col-8 col-sm-5">Description</div>
@@ -282,8 +306,11 @@
             </div>
           </div>
           <b>Solde Restant :</b> {{ object.balance | intcomma }}
+          <br/>
+          <!-- <b>Solde de l'anicien paiement : {{  object.previous_balance  }} </b> -->
           <hr />
         </div>
+
 
         <div class="content-container mt-4 bgc-default-tp1 py-25 w-full">
           <div class="row text-400 text-white bg-white py-25 ">

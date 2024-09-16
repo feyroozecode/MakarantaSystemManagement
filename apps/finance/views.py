@@ -64,6 +64,9 @@ class InvoiceDetailView(LoginRequiredMixin, DetailView):
 
         year_suffix = timezone.now().strftime('%y')
         receipt_number = f"REC/{year_suffix}-{next_number}"
+        previous_balance = self.object.balance_from_previous_term if self.object.balance_from_previous_term else 0
+        
+        context["previous_balance"] = previous_balance  # Expose previous balance
         context["receipt_number"] = receipt_number
 
         return context
@@ -102,7 +105,6 @@ class InvoiceUpdateView(LoginRequiredMixin, UpdateView):
 class InvoiceDeleteView(LoginRequiredMixin, DeleteView):
     model = Invoice
     success_url = reverse_lazy("invoice-list")
-
 
 class ReceiptCreateView(LoginRequiredMixin, CreateView):
     model = Receipt
