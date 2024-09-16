@@ -50,6 +50,9 @@ class Invoice(models.Model):
 
     def get_absolute_url(self):
         return reverse("invoice-detail", kwargs={"pk": self.pk})
+    
+    def last_payment(self):
+        return Receipt.objects.filter(invoice=self).order_by('-date_paid').first()
 
 
 class InvoiceItem(models.Model):
