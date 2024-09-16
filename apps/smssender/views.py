@@ -17,9 +17,9 @@ def send_sms(request):
 
     # Ensure these variables are set correctly
     base_name = "https://lamsms.lafricamobile.com/api"  # Set your base URL
-    accountId = "AlfajerApps"  # Set your account ID
-    password = "Cohmii5owoow"  # Set your password
-    sender = "Imam Malick"  # Set your sender name
+    accountId = ""  # Set your account ID
+    password = ""  # Set your password
+    sender = ""  # Set your sender name
 
     if request.method == 'POST':
         form = SMSMessageForm(request.POST)
