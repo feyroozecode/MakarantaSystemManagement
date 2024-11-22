@@ -22,6 +22,7 @@
           <th> Contact  Parent <!--Mobile Phone Number--> </th>
           <th>Total à payer <!-- Total Payable --> </th>
           <th>Total payé <!--Total Paid--></th>
+          <th>Solde (Total) Annuel</th>
           <th>Solde (Balance)</th>
           <th></th>
         </tr>
@@ -37,6 +38,9 @@
             <td>{{ invoice.total_amount_payable | intcomma }}</td>
             <td>{{ invoice.total_amount_paid | intcomma }}</td>
             <td>{{ invoice.balance | intcomma }}</td>
+             <!-- Displaying the Total Annual Amount -->
+            <td>{{ invoice.total_annual | intcomma }}</td> <!-- New field for Total Annual -->
+            
             <td><a class="btn btn-success btn-sm"
                 href="{% url 'receipt-create' %}?invoice={{ invoice.id }}">
                 Ajout Nouveau reçu <!-- Add new receipt --> </a></td>

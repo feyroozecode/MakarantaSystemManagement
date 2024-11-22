@@ -7,6 +7,7 @@ from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.urls import reverse
 from django.utils import timezone
 from datetime import datetime
+from django.db.models import Sum
 
 from apps.students.models import Student
 
@@ -26,10 +27,15 @@ class InvoiceCreateView(LoginRequiredMixin, CreateView):
     def get_context_data(self, **kwargs):
         context = super(InvoiceCreateView, self).get_context_data(**kwargs)
         context['current_date'] = timezone.now()
+        current_year = timezone.now().year
+        total_annulay_payement = Invoice.objects.filter(date__year=current_year).aggregate(total=Sum('total_amount_paid'))['total']
+        context['total_annulay_payement'] = total_annulay_payement if total_annulay_payement else 0
+        
         if self.request.POST:
             context["items"] = InvoiceItemFormset(
                 self.request.POST, prefix="invoiceitem_set"
             )
+       
         else:
             context["items"] = InvoiceItemFormset(prefix="invoiceitem_set")
         return context
