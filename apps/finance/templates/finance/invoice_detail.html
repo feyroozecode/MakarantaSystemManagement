@@ -316,9 +316,9 @@
           <div class="mt-3 invoice-details-header">
             <div class="row text-600 text-white bg-gray bg-default-tp1 py-25">
               <div class="d-none d-sm-block col-1">N°</div>
-              <div class="col-8 col-sm-5">Montant Payé</div>
+              <div class="col-4 col-sm-5">Montant Payé</div>
               <div class="col-2">Date de paiement</div>
-              <div class="col-2">Commentaire</div>
+              <div class="col-4">Commentaire</div>
             </div>
           </div>
 
@@ -326,9 +326,9 @@
           <div class="text-95 text-secondary-d3">
               <div class="row mb-2 mb-sm-0 py-25">
                 <div class="d-none d-sm-block col-1"> {{ forloop.counter }} </div>
-                <div class="col-9 col-sm-5"> {{ receipt.amount_paid }} </div>
+                <div class="col-7 col-sm-5"> {{ receipt.amount_paid }} </div>
                 <div class="col-2 text-secondary-d2">{{ receipt.date_paid }} </div>
-                <div class="col-2 text-secondary-d2"> {{ receipt.comment }}</div>
+                <div class="col-4 text-secondary-d2"> {{ receipt.comment }}</div>
               </div>
             </div>
             {% endfor %}
@@ -337,9 +337,9 @@
         </div>  
 
         <!-- div for NB : Le montant payee n' est aps remboursable -->
-          <div class="row text-400 text-black py-25 ">
-            <div class="col-12 text-center"></div>
-              <h6 class="col-12 text-center text-secondary-d2 ">NB : Le montant payé n'est pas remboursable</h6>
+          <div class="row text-600 text-black py-25 ">
+            <div class="col-12 text-left"></div>
+              <h6 class="col-12 text-secondary-d2 ">NB : Le montant payé n'est pas remboursable</h6>
           </div>
 
      <!-- 
