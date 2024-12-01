@@ -40,6 +40,12 @@ class InvoiceCreateView(LoginRequiredMixin, CreateView):
             context["items"] = InvoiceItemFormset(prefix="invoiceitem_set")
         return context
 
+
+    def get_total_annualy_invoice(self, **kwargs):
+        current_year = timezone.now().year
+        total_annualy_invoice = Invoice.objects.filter(date__year=current_year).aggregate(total=Sum('total_amount_paid'))['total'] if Invoice.objects.filter(date__year=current_year).exists() else 0
+        return total_annualy_invoice
+
     def form_valid(self, form):
         context = self.get_context_data()
         formset = context["items"]

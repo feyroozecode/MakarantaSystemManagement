@@ -16,26 +16,26 @@
 {% endblock content-header %}
 
 {% block content %}
-<div class="card" style="width: 500px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div class="card" style="width: 650px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
   <!-- Header -->
   <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; background-color: #4CAF50; color: white; padding: 15px;">
-    <img src="{% static 'flag.png' %}" alt="Country Flag" style="height: 40px;">
+    <img src="{% static 'dist/img/embleme.jpeg' %}" alt="Country Flag" style="height: 60px; width: auto; border-radius: 10px;">
     <div style="text-align: center;">
       <h1 style="margin: 0; font-size: 1.5em;">Green Valley School</h1>
-      <p style="margin: 5px 0 0; font-size: 1em;">Address: Wadata</p>
+      <p style="margin: 0px; font-size: 1em;">Address: Wadata</p>
     </div>
-    <img src="{% static 'school-logo.png' %}" alt="School Logo" style="height: 40px;">
+    <img src="{% static 'dist/img/imam_logo.png' %}" alt="School Logo" style="height: 60px;">
   </div>
 
   <!-- School Year -->
-  <div class="school-year" style="text-align: center; padding: 10px 0; background-color: #e8f5e9; font-size: 1.2em; font-weight: bold; color: #4CAF50;">
+  <div class="school-year" style="text-align: center; padding: 5px 0; background-color: #e8f5e9; font-size: 1.2em; font-weight: bold; color: #4CAF50;">
     <p>Academic Year: {{ object.academic_year|default:"2023 - 2024" }}</p>
   </div>
 
   <!-- Main Content -->
   <div class="card-body" style="display: flex; padding: 15px; gap: 15px;">
     <!-- Left Column -->
-    <div class="details" style="flex: 1.5; padding: 10px; border: 2px dashed #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff;">
+    <div class="details" style="flex: 2; padding: 10px; border: 2px dashed #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff;">
       <h2 style="font-size: 1.2em; margin-bottom: 10px; color: #333;">Student Information</h2>
       <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Full Name:</strong> {{ object.firstname }} - {{ object.arabic_name }}</p>
       <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Date of Birth:</strong> {{ object.date_of_birth }}</p>
@@ -53,7 +53,7 @@
       {% if object.passport %}
         <img src="{{ object.passport.url }}" alt="Student Photo" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
       {% else %}
-        <img src="{% static 'student-photo.png' %}" alt="Default Avatar" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
+        <img src="{% static 'dist/img/avatar.png' %}" alt="Default Avatar" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
       {% endif %}
       <p style="font-size: 1em; color: #333;"><strong>Student ID:</strong> {{ object.registration_number }}</p>
     </div>
