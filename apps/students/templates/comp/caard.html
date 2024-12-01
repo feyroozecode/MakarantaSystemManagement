@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+
+.card {
+    width: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.card-header .flag {
+    height: 40px;
+    width: auto;
+}
+
+.card-header .header-center {
+    text-align: center;
+}
+
+.card-header .header-center h1 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card-header .header-center p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.card-header .logo {
+    height: 40px;
+    width: auto;
+}
+
+/* School Year */
+.school-year {
+    background-color: #e8f5e9;
+    color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Main Content */
+.card-body {
+    display: flex;
+    height: 85%;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* Left Column (Details) */
+.details {
+    flex: 1.5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+   border-color: #4CAF50;
+}
+
+.details h2 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Right Column (Photo) */
+.photo {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+     border-color: #4CAF50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    margin-bottom: 10px;
+}
+
+.photo p {
+    font-size: 0.9em;
+    color: #333;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+            <img src="flag.png" alt="Country Flag" class="flag">
+            <div class="header-center">
+                <h1>Green Valley School</h1>
+                <p>Address: Wadata</p>
+            </div>
+            <img src="school-logo.png" alt="School Logo" class="logo">
+        </div>
+
+        <!-- School Year -->
+        <div class="school-year">
+            <p>Academic Year: 2023 - 2024</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="card-body">
+            <div class="details">
+                <h2>Student Information</h2>
+                <p><strong>Full Name:</strong> Mahamadou - عبد العزيز محمد</p>
+                <p><strong>Date of Birth:</strong> April 20, 2024</p>
+                <p><strong>Gender:</strong> Garçon</p>
+                <h2>Contact Details</h2>
+                <p><strong>Parent/Guardian Contact:</strong> 0022797272001</p>
+                <p><strong>Address:</strong> Wadata</p>
+                <h2>Academic Information</h2>
+                <p><strong>Current Class:</strong> Niveau 1</p>
+                <p><strong>Comments:</strong> Actuellement actif en classe de Niveau 1</p>
+            </div>
+            <div class="photo">
+                <img src="student-photo.png" alt="Student Photo">
+                <p><strong>Student ID:</strong> MIM-123</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
