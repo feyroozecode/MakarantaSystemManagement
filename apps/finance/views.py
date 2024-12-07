@@ -28,8 +28,8 @@ class InvoiceCreateView(LoginRequiredMixin, CreateView):
         context = super(InvoiceCreateView, self).get_context_data(**kwargs)
         context['current_date'] = timezone.now()
         current_year = timezone.now().year
-        total_annulay_payement = Invoice.objects.filter(date__year=current_year).aggregate(total=Sum('total_amount_paid'))['total']
-        context['total_annulay_payement'] = total_annulay_payement if total_annulay_payement else 0
+        #total_annulay_payement = Invoice.objects.filter(date__year=current_year).aggregate(total=Sum('total_amount_paid'))['total']
+        #context['total_annulay_payement'] = total_annulay_payement if total_annulay_payement else 0
         
         if self.request.POST:
             context["items"] = InvoiceItemFormset(
