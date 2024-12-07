@@ -1,14 +1,55 @@
 {% extends 'base.html' %}
 {% load humanize %}
+{% load i18n %}
+{% load finance_extras %}
 
-{% block title %}invoices{% endblock title %}
+{% block title %}Factures{% endblock title %}
+
+{% block extracss %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+<style>
+  .date-filter-container {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .datepicker {
+    z-index: 1600 !important;
+  }
+</style>
+{% endblock extracss %}
 
 {% block breadcrumb %}
-<a class="btn btn-primary" href="{% url 'invoice-create' %}"><i
-    class="fas fa-plus"></i> <!-- New Invoice--> Nouvelle Facture </a>
-<!-- <a class="btn btn-primary" href="{% url 'bulk-invoice' %}"><i
-    class="fas fa-upload"></i> Bulk Invoice</a>
--->
+<a class="btn btn-primary mr-0 m-2" href="{% url 'invoice-create' %}">
+  <i class="fas fa-plus"></i> Nouvelle Facture
+</a>
+<div class="d-flex justify-content-between align-items-center flex-wrap">
+  
+  <div class="date-filter-container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Du</span>
+          </div>
+          <input type="text" class="form-control datepicker" id="start-date" placeholder="Date début">
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Au</span>
+          </div>
+          <input type="text" class="form-control datepicker" id="end-date" placeholder="Date fin">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <button id="filter-date" class="btn btn-primary w-100">Filtrer</button>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock breadcrumb %}
 
 {% block content %}
@@ -16,48 +57,108 @@
     <table id="invoicetable" class="table table-bordered table-hover">
       <thead class="thead-light">
         <tr>
-          <th>S/N</th>
-          <th>Facture</th>
-          <th>Durée de la session<!--Session-term --> </th>
-          <th> Contact  Parent <!--Mobile Phone Number--> </th>
-          <th>Total à payer <!-- Total Payable --> </th>
-          <th>Total payé <!--Total Paid--></th>
-          <th>Solde (Total) Annuel</th>
-          <th>Solde (Balance)</th>
-          <th></th>
+          <th>N°</th>
+          <th>Date Création</th>
+          <th>Étudiant</th>
+          <th>Session - Trimestre</th>
+          <th>Contact Parent</th>
+          <th>Montant Trimestre</th>
+          <th>Payé Trimestre</th>
+          <th>Reste Trimestre</th>
+          <th>Montant Annuel</th>
+          <th>Payé Annuel</th>
+          <th>Reste Annuel</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
-
         {% for invoice in object_list %}
           <tr class='clickable-row' data-href="{% url 'invoice-detail' invoice.id %}">
             <td>{{ forloop.counter}}</td>
-            <td>{{ invoice}}</td>
-            <td>{{ invoice.session}}-{{ invoice.term}}</td>
+            <td>{{ invoice.created_at|french_date }}</td>
+            <td>{{ invoice.student.firstname }} {{ invoice.student.name }}</td>
+            <td>{{ invoice.term}}({{ invoice.session}}) </td>
             <td>{{ invoice.student.parent_mobile_number}}</td>
-            <td>{{ invoice.total_amount_payable | intcomma }}</td>
-            <td>{{ invoice.total_amount_paid | intcomma }}</td>
-            <td>{{ invoice.balance | intcomma }}</td>
-             <!-- Displaying the Total Annual Amount -->
-            <td>{{ invoice.total_annual | intcomma }}</td> <!-- New field for Total Annual -->
-            
-            <td><a class="btn btn-success btn-sm"
-                href="{% url 'receipt-create' %}?invoice={{ invoice.id }}">
-                Ajout Nouveau reçu <!-- Add new receipt --> </a></td>
+            <td class="text-right">{{ invoice.total_amount_payable | intcomma }} F</td>
+            <td class="text-right">{{ invoice.total_amount_paid | intcomma }} F</td>
+            <td class="text-right">{{ invoice.balance | intcomma }} F</td>
+            <td class="text-right">{{ invoice.total_annual | intcomma }} F</td>
+            <td class="text-right">{{ invoice.total_annual_paid | intcomma }} F</td>
+            <td class="text-right">{{ invoice.total_annual_balance | intcomma }} F</td>
+            <td>
+              <a class="btn btn-success btn-sm" href="{% url 'receipt-create' %}?invoice={{ invoice.id }}">
+                <i class="fas fa-plus"></i> Reçu
+              </a>
+            </td>
           </tr>
         {% endfor %}
-
       </tbody>
     </table>
   </div>
 {% endblock content %}
 
-
 {% block morejs %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.fr.min.js"></script>
 <script>
-   $('#invoicetable').DataTable({
-    select: false
+  $(document).ready(function() {
+    // Initialize DataTable
+    var table = $('#invoicetable').DataTable({
+      select: false,
+      order: [[0, 'desc']],
+      language: {
+        url: '//cdn.datatables.net/plug-ins/1.10.24/i18n/French.json'
+      }
     });
-</script>
 
+    // Initialize Datepickers with French locale
+    $('.datepicker').datepicker({
+      format: 'dd/mm/yyyy',
+      language: 'fr',
+      autoclose: true,
+      todayHighlight: true,
+      clearBtn: true,
+      language: 'fr'
+    });
+
+    // Custom date range filter
+    $.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+      var startDate = $('#start-date').val();
+      var endDate = $('#end-date').val();
+      
+      if (!startDate && !endDate) {
+        return true;
+      }
+
+      var dateStr = data[2].split(' - ')[0];
+      if (!dateStr) {
+        return true;
+      }
+
+      var date = moment(dateStr, 'YYYY');
+      var start = startDate ? moment(startDate, 'DD/MM/YYYY') : null;
+      var end = endDate ? moment(endDate, 'DD/MM/YYYY') : null;
+
+      if (start && end) {
+        return date.isBetween(start, end, 'year', '[]');
+      } else if (start) {
+        return date.isSameOrAfter(start, 'year');
+      } else if (end) {
+        return date.isSameOrBefore(end, 'year');
+      }
+      
+      return true;
+    });
+
+    // Filter button click handler
+    $('#filter-date').click(function() {
+      table.draw();
+    });
+
+    // Clear filters when dates are cleared
+    $('.datepicker').on('clearDate', function() {
+      table.draw();
+    });
+  });
+</script>
 {% endblock morejs %}

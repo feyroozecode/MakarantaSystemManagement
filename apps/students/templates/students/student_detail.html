@@ -4,8 +4,9 @@
 {% block content-header %}
 <div class="card-header">
   <div class="card-tools">
-    
-    <a href="#" class="btn btn-tool">Imprimer</a>
+    <a href="#" class="btn btn-tool" onclick="printStudentCard()">
+      <i class="fas fa-print"></i> Imprimer
+    </a>
     <a href="{% url 'student-update' object.id %}" class="btn btn-tool">
       <i class="fas fa-edit"></i>
     </a>
@@ -17,134 +18,135 @@
 {% endblock content-header %}
 
 {% block content %}
-    <div class="row mb-4">
-     
-      <div class="col-sm-8">
-        <div>
-          <div class="form-group border-bottom row">
-            <label class="col">
-             Nom complet 
-            </label>
-            <div class="col">
-             <label> <b> {{ object.firstname }} - {{ object.arabic_name }}  </b> </label>
-            </div>
-          </div>
-            
-          <div class="form-group border-bottom row">
-            <label class="col">
-             Date Naissance
-            </label>
-            <div class="col">
-              {{ object.date_of_birth }}
-            </div>
-          </div>
-
-           <div class="form-group border-bottom row">
-            <label class="col">
-             Genre
-            </label>
-            <div class="col">
-              {{ object.get_gender_display }}
-            </div>
-          </div>
-
-          <div class="form-group border-bottom row">
-            <label class="col">
-              Contact Parent ou Tuteur
-            </label>
-            <div class="col">
-              {{ object.parent_mobile_number}}
-            </div>
-          </div>
-
-          <div class="form-group border-bottom row">
-            <label class="col">
-              Addresse
-            </label>
-            <div class="col">
-              {{ object.address }}
-            </div>
-          </div>
-           <div class="form-group border-bottom row">
-            <label class="col">
-             Classe Actuelle
-            </label>
-            <div class="col">
-              <label> <b>{{object.current_class}}  </b> </label>
-            </div>
-          </div>
-          
-          <div class="form-group border-bottom row">
-            <label class="col">
-              Commentaires 
-            </label>
-            <div class="col">
-              <label> Actuellement {{ object.current_status }} en classe de {{ object.current_class }} </label>
-            </div>
-          </div>
-
-        </div>
-
+<div class="student-card-container">
+  <div id="printable-card" class="card" style="width: 580px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #4CAF50;">
+    <!-- Header -->
+    <div class="card-header" style="position: relative; background-color: #4CAF50; color: white; padding: 15px; border-bottom: 2px solid #388E3C;">
+      <img src="{% static 'dist/img/embleme.jpeg' %}" alt="Country Flag" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); height: 60px; width: auto; border-radius: 10px;">
+      <div style="text-align: center; margin: 0 70px;">
+        <h1 style="margin: 0; font-size: 1.8em; font-weight: bold;">République du Niger</h1>
+        <h2 style="margin: 5px 0; font-size: 1.5em; color: #ffffff;">Médersa Coranique Imam Malick</h2>
+        <p style="margin: 2px 0; font-size: 1em;">Address: Wadata Niamey-Niger</p>
+        <p style="margin: 2px 0; font-size: 1em;">Téléphone : 0022799 99 89 80 / 94 80 03 33</p>
       </div>
-
-       <div class="col-sm-4">
-        <div class="row mb-2">
-
-          {% if object.passport %}
-            <img
-              src="{{ object.passport.url }}"
-              class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
-          {% else %}
-            <img
-              src="{% static 'dist/img/avatar.png' %}"
-              class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
-          {% endif %}
-     
-
-        </div>
-       
-          <!-- | {{ object.get_current_status_display }} --> </h5>  
-          <h4 > {{ object.registration_number }} </h4>
-      </div>
-      
+      <img src="{% static 'dist/img/imam_logo.png' %}" alt="School Logo" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); height: 60px; background-color: white; border-radius: 10px;">
     </div>
 
-    <hr>
-    <div class="card-header">
-  <div class="card-tools">
-    
-    <a href="http://127.0.0.1:8000/finance/create/" class="btn btn-primary">Passer au paiement </a>
-   
+    <!-- School Year -->
+    <div class="school-year no-print" style="text-align: center; padding: 5px 0; background-color: #e8f5e9; font-size: 1.2em; font-weight: bold; color: #4CAF50;">
+      <p style="font-weight: bold; font-size: 1.2em;">Annee Academique: {{ object.academic_year|default:"2024 - 2025" }}</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="card-body" style="display: flex; padding: 15px; gap: 15px;">
+      <!-- Left Column -->
+      <div class="details" style="flex: 2; padding: 10px; border: 2px dashed #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff;">
+        <h2 style="font-size: 1.2em; margin-bottom: 10px; color: #333;">Information du Etudiant</h2>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Section:</strong> {{ object.get_section_display }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Nom Complet:</strong> {{ object.firstname }} - {{ object.arabic_name }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Date de Naissance:</strong> {{ object.date_of_birth }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Genre:</strong> {{ object.get_gender_display }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Contact Parents/Tuteur:</strong> {{ object.parent_mobile_number }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Adresse:</strong> {{ object.address }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Classe Actuelle :</strong> {{ object.current_class }}</p>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Description:</strong> Actuellement {{ object.current_status }} en classe de {{ object.current_class }}</p>
+      </div>
+
+      <!-- Right Column -->
+      <div class="photo" style="flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 2px dashed #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff;">
+        {% if object.passport %}
+          <img src="{{ object.passport.url }}" alt="Student Photo" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
+        {% else %}
+          <img src="{% static 'dist/img/avatar.png' %}" alt="Default Avatar" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 10px;">
+        {% endif %}
+        <p style="font-size: 1em; color: #333;"><strong>Matricule:</strong> {{ object.registration_number }}</p>
+      </div>
+    </div>
   </div>
 </div>
-    <hr>
-    {% if payments %}
-    <h4>Facture / Historique de paiement</h4>
-      <table class="table table-sm table-bordered table-hover">
-        <thead class="thead-light">
-          <tr>
-            <th>Pour</th>
-            <th>Montant à payer</th>
-            <th>Montant ayé</th>
-            <th>Solde</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for payment in payments %}
-            <tr class='clickable-row' data-href="{% url 'invoice-detail' payment.id %}">
-              <td>{{payment.session}} - {{payment.term}} - {{ payment.class_for}}</td>
-              <td>{{payment.total_amount_payable}}</td>
-              <td>{{payment.total_amount_paid}}</td>
-              <td>{{payment.balance}}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    {% else %}
-       <!--  <p>There are no payment history for {{object}}</p> -->
-    {% endif %}
 
+<div class="non-printable-content">
+  <hr>
+  <div class="card-header">
+    <div class="card-tools">
+      <!-- <button type="button" class="btn btn-tool" data-card-widget="maximize"><i class="fa fa-expand"></i></button> -->
+      <a href="http://127.0.0.1:8000/finance/create/" class="btn btn-primary">Passer au paiement </a>
+    </div>
+  </div>
+  <hr>
 
+  {% if payments %}
+  <h4>Facture / Historique de paiement</h4>
+  <table class="table table-sm table-bordered table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th>Pour</th>
+        <th>Montant à payer</th>
+        <th>Montant payé</th>
+        <th>Solde</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for payment in payments %}
+      <tr class='clickable-row' data-href="{% url 'invoice-detail' payment.id %}">
+        <td>{{ payment.session }} - {{ payment.term }} - {{ payment.class_for }}</td>
+        <td>{{ payment.total_amount_payable }}</td>
+        <td>{{ payment.total_amount_paid }}</td>
+        <td>{{ payment.balance }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
 
+<style>
+  @media print {
+    body * {
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .non-printable-content {
+      display: none !important;
+    }
+    #printable-card, #printable-card * {
+      visibility: visible;
+      position: relative;
+    }
+    #printable-card {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      width: 650px;
+      margin: 0 auto;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    .no-print {
+      display: none !important;
+    }
+    .card-body {
+      page-break-inside: avoid;
+    }
+    .details {
+      border: 2px dashed #ddd !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    .card-header {
+      background-color: #4CAF50 !important;
+      color: white !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+  }
+</style>
 
+<script>
+  function printStudentCard() {
+    window.print();
+  }
+</script>
 {% endblock content %}
