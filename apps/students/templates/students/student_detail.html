@@ -19,9 +19,9 @@
 
 {% block content %}
 <div class="student-card-container">
-  <div id="printable-card" class="card" style="width: 580px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <div id="printable-card" class="card" style="width: 580px; margin: auto; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); border: 2px solid #4CAF50;">
     <!-- Header -->
-    <div class="card-header" style="position: relative; background-color: #4CAF50; color: white; padding: 15px;">
+    <div class="card-header" style="position: relative; background-color: #4CAF50; color: white; padding: 15px; border-bottom: 2px solid #388E3C;">
       <img src="{% static 'dist/img/embleme.jpeg' %}" alt="Country Flag" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); height: 60px; width: auto; border-radius: 10px;">
       <div style="text-align: center; margin: 0 70px;">
         <h1 style="margin: 0; font-size: 1.8em; font-weight: bold;">République du Niger</h1>
@@ -42,6 +42,7 @@
       <!-- Left Column -->
       <div class="details" style="flex: 2; padding: 10px; border: 2px dashed #ddd; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff;">
         <h2 style="font-size: 1.2em; margin-bottom: 10px; color: #333;">Information du Etudiant</h2>
+        <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Section:</strong> {{ object.get_section_display }}</p>
         <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Nom Complet:</strong> {{ object.firstname }} - {{ object.arabic_name }}</p>
         <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Date de Naissance:</strong> {{ object.date_of_birth }}</p>
         <p style="margin: 5px 0; font-size: 1em; color: #555;"><strong>Genre:</strong> {{ object.get_gender_display }}</p>

@@ -20,6 +20,11 @@ class Student(models.Model):
     
     HEALTH_STATE_CHOICES = [("healthy", "Sain"), ("unhealthy", "Malade")]
 
+    SECTION_CHOICES = [
+        ("complexe", "Complexe Coranique"),
+        ("institut", "Institut Coranique")
+    ]
+
     mobile_num_regex = RegexValidator(
         regex="^[0-9]{10,15}$", message="Entered mobile number isn't in a right format!"
     )
@@ -28,10 +33,18 @@ class Student(models.Model):
         max_length=10, choices=STATUS_CHOICES, default="active",
         verbose_name= "Statut Courant"
     )
+
+    section = models.CharField(
+        max_length=20,
+        choices=SECTION_CHOICES,
+        default="complexe",
+        verbose_name="Section",
+        db_index=True
+    )
+
     registration_number = models.CharField(
         max_length=10,
         unique=True,
-        #default = generate_student_number,
         verbose_name="Numero d'enregistrement"
     )
     
@@ -80,19 +93,20 @@ class Student(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.registration_number:
-            # Get the latest student register number
-            last_student = Student.objects.order_by('-id').first()
+            # Get the latest student register number for the specific section
+            last_student = Student.objects.filter(section=self.section).order_by('-id').first()
             if last_student:
                 last_register_number = last_student.registration_number
                 # Extract the numeric part of the register number
                 last_number = int(last_register_number.split('-')[1])
             else:
-                # If no students exist yet, start with 0
+                # If no students exist yet in this section, start with 0
                 last_number = 0
             # Increment the numeric part
             new_number = last_number + 1
-            # Format the new register number with the prefix and padded numeric part
-            self.registration_number = 'MIM-{0:03d}'.format(new_number)
+            # Format the new register number with the section-specific prefix
+            prefix = 'MCC' if self.section == 'complexe' else 'MIC'
+            self.registration_number = f'{prefix}-{new_number:03d}'
         super().save(*args, **kwargs)
     
     def __str__(self):

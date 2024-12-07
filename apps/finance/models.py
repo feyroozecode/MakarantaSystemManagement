@@ -23,7 +23,20 @@ class Invoice(models.Model):
 
     def __str__(self):
         return f"{self.student} "
-       # return f"{self.student} {self.firstname} ({self.registration_number}) ({self.student.registration_number}) ({self.student.parent_mobile_number})"
+
+    def created_at(self):
+        """Returns the creation date of the invoice"""
+        if self.receipt_set.exists():
+            return self.receipt_set.order_by('date_paid').first().date_paid
+        elif hasattr(self.session, 'current') and self.session.current:
+            return timezone.now()
+        elif hasattr(self.session, 'start_date') and self.session.start_date:
+            return self.session.start_date
+        elif hasattr(self.term, 'current') and self.term.current:
+            return timezone.now()
+        elif hasattr(self.term, 'start_date') and self.term.start_date:
+            return self.term.start_date
+        return timezone.now()
 
     def balance(self):
         payable = self.total_amount_payable()
@@ -53,6 +66,31 @@ class Invoice(models.Model):
     
     def last_payment(self):
         return Receipt.objects.filter(invoice=self).order_by('-date_paid').first()
+
+    def total_annual(self):
+        # Get all invoices for this student in the current session
+        student_invoices = Invoice.objects.filter(
+            student=self.student,
+            session=self.session
+        )
+        total = 0
+        for invoice in student_invoices:
+            total += invoice.total_amount_payable()
+        return total
+
+    def total_annual_paid(self):
+        # Get all invoices for this student in the current session
+        student_invoices = Invoice.objects.filter(
+            student=self.student,
+            session=self.session
+        )
+        total = 0
+        for invoice in student_invoices:
+            total += invoice.total_amount_paid()
+        return total
+
+    def total_annual_balance(self):
+        return self.total_annual() - self.total_annual_paid()
 
 
 class InvoiceItem(models.Model):
