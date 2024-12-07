@@ -75,7 +75,7 @@
         {% for invoice in object_list %}
           <tr class='clickable-row' data-href="{% url 'invoice-detail' invoice.id %}">
             <td>{{ forloop.counter}}</td>
-            <td>{{ invoice.created_at|date:"j F Y H:i" }}</td>
+            <td>{{ invoice.created_at|french_date }}</td>
             <td>{{ invoice.student.firstname }} {{ invoice.student.name }}</td>
             <td>{{ invoice.term}}({{ invoice.session}}) </td>
             <td>{{ invoice.student.parent_mobile_number}}</td>

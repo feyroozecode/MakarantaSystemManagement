@@ -108,6 +108,91 @@
     .text-right {
       text-align: right;
     }
+    /* delete styles */
+    .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 30px;
+  border: none;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.modal-message {
+  color: #666;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.modal-warning {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.modal-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-cascade {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+@media print {
+  .modal, .action-buttons {
+    display: none !important;
+  }
+}
+
     .footer {
       text-align: center;
       margin-top: 20px;
@@ -189,9 +274,39 @@
       </a>
       <!-- a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
         <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2">Exporter</i>
-        
       </a -->
-
+      <div class="dropdown">
+        
+        <a class="btn bg-white btn-light mx-1px text-95" href="#" onclick="showDeleteModal()">
+          <i class="fas fa-trash text-danger"></i>
+          Supprimer
+        </a>
+       <!-- Delete Modal -->
+<div id="deleteModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-title">
+      <i class="fas fa-exclamation-triangle text-warning"></i>
+      Confirmation de suppression
+    </div>
+    <div class="modal-message">
+      Vous êtes sur le point de supprimer la facture de
+      <strong>{{ object.student.firstname }} {{ object.student.name }}</strong>
+    </div>
+    <div class="modal-warning">
+      <i class="fas fa-info-circle"></i>
+      Cette action ne peut pas être annulée
+    </div>
+    <div class="modal-buttons">
+      <button class="btn-cascade btn-cancel" onclick="hideDeleteModal()">
+        <i class="fas fa-times"></i> Annuler
+      </button>
+      <button class="btn-cascade btn-delete" onclick="deleteInvoice()">
+        <i class="fas fa-trash"></i> Supprimer
+      </button>
+    </div>
+  </div>
+</div>
+      </div>
     </div>
   </div>
 </div>
@@ -342,35 +457,7 @@
               <h6 class="col-12 text-secondary-d2 ">NB : Le montant payé n'est pas remboursable</h6>
           </div>
 
-     <!-- 
-     the old table version
-        <div class="content-container mt-4 bgc-default-tp1 py-25 w-full">
-            <h6>Historique des paiements</h6>
-          <div class="row text-400 text-white py-25 ">
-      
-            <table class="table table-bordered table-sm">
-              <thead class="bg-gray">
-                <tr>
-                  <th class="col-1">N°</th>
-                  <th class="col-4">Montant Payé</th>
-                  <th class="col-3">Date de paiement</th>
-                  <th class="col-6">Commentaire</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for receipt in receipts %}
-                <tr>
-                  <td> <div style="color: #333; font-size: 15px;"> {{ forloop.counter }} </div> </td>
-                  <td> <div style="color: #333; font-size: 15px;"> {{ receipt.amount_paid }} </div> </td>
-                  <td> <div style="color: #333; font-size: 15px;"> {{ receipt.date_paid }} </div></td>
-                  <td> <div style="color: #333; font-size: 15px;"> {{ receipt.comment }} </div> </td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>   
-     -->
+   
 
       </div>
       <div class="mt-4">
@@ -391,6 +478,59 @@
       window.print();
       document.body.innerHTML = originalContents;
     }
+    
+    function showDeleteModal() {
+  const modal = document.getElementById('deleteModal');
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Prevent scrolling
+  
+  // Add fade-in animation
+  modal.style.opacity = '0';
+  setTimeout(() => {
+    modal.style.opacity = '1';
+    modal.style.transition = 'opacity 0.3s ease';
+  }, 10);
+}
+
+function hideDeleteModal() {
+  const modal = document.getElementById('deleteModal');
+  modal.style.opacity = '0';
+  document.body.style.overflow = ''; // Restore scrolling
+  
+  // Wait for fade-out animation before hiding
+  setTimeout(() => {
+    modal.style.display = 'none';
+  }, 300);
+}
+
+function deleteInvoice() {
+  // Show loading state
+  const deleteBtn = document.querySelector('.btn-delete');
+  const originalContent = deleteBtn.innerHTML;
+  deleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Suppression...';
+  deleteBtn.disabled = true;
+  
+  // Redirect after a short delay to show loading state
+  setTimeout(() => {
+    window.location.href = "{% url 'invoice-delete' object.id %}";
+  }, 500);
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('deleteModal');
+  if (event.target == modal) {
+    hideDeleteModal();
+  }
+}
+
+// Close modal on escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    hideDeleteModal();
+  }
+});
+
   </script>
 
 {% endblock content %}
