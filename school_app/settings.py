@@ -124,18 +124,6 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-#from django.utils.translation import gettext_lazy as _
-
-#
-#LANGUAGES = [
-#    ('en', _('English')),
-#    ('fr', _('Francais'))
-#]
-
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale')
-]
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

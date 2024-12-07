@@ -1,0 +1,1049 @@
+INFO 2024-09-02 19:57:39,207 Watching for file changes with StatReloader
+INFO 2024-09-02 19:58:22,691 "GET / HTTP/1.1" 302 0
+INFO 2024-09-02 19:58:22,785 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-02 19:58:40,080 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-02 19:58:40,125 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-02 19:58:40,188 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-02 19:58:40,224 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-02 19:58:40,242 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-02 19:58:40,345 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-02 19:58:40,372 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-02 19:58:40,378 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-02 19:58:40,387 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-02 19:58:40,461 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-02 19:58:40,477 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-02 19:58:40,482 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-02 19:58:40,545 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-02 19:58:40,964 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-02 21:34:10,966 "GET / HTTP/1.1" 302 0
+INFO 2024-09-02 21:34:11,110 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-02 21:34:11,865 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-02 21:34:11,876 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-02 21:34:11,940 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-02 21:34:11,964 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-02 21:34:11,978 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-02 21:34:11,981 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-02 21:34:12,055 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-02 21:34:12,063 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-02 21:34:12,209 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-02 21:34:12,221 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-02 21:34:12,288 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-02 21:34:12,290 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-02 21:34:12,344 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-02 21:34:12,346 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-02 21:34:12,347 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-02 21:34:12,371 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-02 21:34:12,548 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-08 08:17:46,403 Watching for file changes with StatReloader
+INFO 2024-09-08 08:17:52,187 "GET / HTTP/1.1" 302 0
+INFO 2024-09-08 08:17:52,261 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-08 08:17:52,523 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-08 08:17:52,534 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-08 08:17:52,536 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-08 08:17:52,559 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-08 08:17:52,561 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-08 08:17:52,583 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-08 08:17:52,587 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-08 08:17:52,600 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-08 08:17:52,601 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-08 08:17:52,603 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-08 08:17:52,608 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-08 08:17:52,614 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-08 08:17:52,620 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-08 08:17:52,893 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-08 08:18:13,174 "GET / HTTP/1.1" 302 0
+INFO 2024-09-08 08:18:13,288 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-08 08:18:13,625 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-08 08:18:13,641 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+INFO 2024-09-08 08:18:13,646 "GET /static/dist/css/login-page.css HTTP/1.1" 304 0
+INFO 2024-09-08 08:18:13,652 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-08 08:18:13,662 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-08 08:18:13,663 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-08 08:18:13,685 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2024-09-08 08:18:13,687 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-08 08:18:13,690 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-08 08:18:13,692 "GET /static/dist/js/demo.js HTTP/1.1" 304 0
+INFO 2024-09-08 08:18:13,694 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-08 08:18:13,695 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-08 08:18:13,696 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-08 08:18:13,971 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-08 08:20:10,230 "GET /finance/list/ HTTP/1.1" 302 0
+INFO 2024-09-08 08:20:10,308 "GET /accounts/login/?next=/finance/list/ HTTP/1.1" 200 4146
+INFO 2024-09-08 08:20:10,789 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-08 08:20:10,794 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-08 08:20:10,798 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-08 08:20:10,798 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2024-09-08 08:20:10,800 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-08 08:20:10,802 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-08 08:20:10,808 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-08 08:20:45,290 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-09-08 08:20:45,316 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-08 08:20:45,498 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-09-08 08:20:45,502 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-08 08:20:45,505 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-08 08:20:45,511 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-08 08:20:45,515 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-08 08:20:45,516 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-08 08:20:45,517 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-08 08:20:45,518 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-08 08:20:45,557 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-09-08 08:20:46,052 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-09-08 08:20:46,099 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-09-08 08:20:47,115 Not Found: /favicon.ico
+WARNING 2024-09-08 08:20:47,116 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-09-08 08:21:07,946 "GET /finance/list/ HTTP/1.1" 200 100256
+INFO 2024-09-08 08:22:12,849 "GET /finance/list/ HTTP/1.1" 200 100256
+INFO 2024-09-08 08:22:15,838 "GET /finance/create/ HTTP/1.1" 200 27572
+INFO 2024-09-08 08:22:23,544 "GET /smssender/send-sms/ HTTP/1.1" 200 31581
+INFO 2024-09-08 08:22:51,833 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 08:23:05,574 "GET /smssender/send-sms/ HTTP/1.1" 200 31581
+ERROR 2024-09-08 08:25:31,939 Internal Server Error: /smssender/send-sms/
+ERROR 2024-09-08 08:25:31,946 "POST /smssender/send-sms/ HTTP/1.1" 500 97
+INFO 2024-09-08 08:28:03,936 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:28:05,344 Watching for file changes with StatReloader
+INFO 2024-09-08 08:28:25,627 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:28:26,688 Watching for file changes with StatReloader
+INFO 2024-09-08 08:33:15,172 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:33:16,493 Watching for file changes with StatReloader
+INFO 2024-09-08 08:34:00,185 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:34:01,167 Watching for file changes with StatReloader
+INFO 2024-09-08 08:34:07,985 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:34:08,821 Watching for file changes with StatReloader
+INFO 2024-09-08 08:34:13,524 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:34:14,189 Watching for file changes with StatReloader
+INFO 2024-09-08 08:37:17,995 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:37:18,971 Watching for file changes with StatReloader
+INFO 2024-09-08 08:39:11,119 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 08:39:12,590 Watching for file changes with StatReloader
+INFO 2024-09-08 08:39:16,735 "GET /smssender/send-sms/ HTTP/1.1" 200 31581
+ERROR 2024-09-08 08:39:25,565 Internal Server Error: /smssender/send-sms/
+ERROR 2024-09-08 08:39:25,566 "POST /smssender/send-sms/ HTTP/1.1" 500 75
+INFO 2024-09-08 08:41:45,877 "GET /finance/list/ HTTP/1.1" 200 100256
+INFO 2024-09-08 08:43:22,061 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 08:53:15,185 "GET /finance/list/ HTTP/1.1" 200 100256
+INFO 2024-09-08 08:53:29,291 "GET /finance/150/detail/ HTTP/1.1" 200 16847
+INFO 2024-09-08 08:53:34,339 "GET /finance/120/detail/ HTTP/1.1" 200 18965
+INFO 2024-09-08 08:53:42,100 "GET /finance/199/detail/ HTTP/1.1" 200 16847
+INFO 2024-09-08 08:54:09,752 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:54:10,972 Watching for file changes with StatReloader
+INFO 2024-09-08 08:54:50,771 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:54:51,934 Watching for file changes with StatReloader
+ERROR 2024-09-08 08:54:58,697 Internal Server Error: /finance/list/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py", line 25, in __str__
+    return f"{self.name} {self.firstname} ({self.registration_number})"
+              ^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'name'
+ERROR 2024-09-08 08:54:58,703 "GET /finance/list/ HTTP/1.1" 500 170736
+INFO 2024-09-08 08:55:07,247 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:55:08,368 Watching for file changes with StatReloader
+INFO 2024-09-08 08:55:10,050 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:55:10,545 Watching for file changes with StatReloader
+INFO 2024-09-08 08:55:14,121 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:55:14,743 Watching for file changes with StatReloader
+INFO 2024-09-08 08:55:37,967 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/urls.py changed, reloading.
+INFO 2024-09-08 08:55:38,946 Watching for file changes with StatReloader
+INFO 2024-09-08 08:55:41,145 "GET /finance/list/ HTTP/1.1" 200 100256
+INFO 2024-09-08 08:55:59,908 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:00,754 Watching for file changes with StatReloader
+INFO 2024-09-08 08:56:27,921 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:28,924 Watching for file changes with StatReloader
+INFO 2024-09-08 08:56:31,818 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:32,393 Watching for file changes with StatReloader
+INFO 2024-09-08 08:56:37,045 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:37,653 Watching for file changes with StatReloader
+INFO 2024-09-08 08:56:46,490 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:47,020 Watching for file changes with StatReloader
+INFO 2024-09-08 08:56:48,583 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:56:49,881 Watching for file changes with StatReloader
+ERROR 2024-09-08 08:56:50,399 Internal Server Error: /finance/list/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py", line 25, in __str__
+    return f"{self.student} {self.firstname} ({self.registration_number})"
+                             ^^^^^^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'firstname'
+ERROR 2024-09-08 08:56:50,409 "GET /finance/list/ HTTP/1.1" 500 170937
+INFO 2024-09-08 08:57:07,187 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:07,722 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:17,095 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:17,685 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:24,184 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:25,051 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:26,745 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:27,659 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:29,966 "GET /finance/list/ HTTP/1.1" 200 100442
+INFO 2024-09-08 08:57:38,425 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:39,742 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:45,056 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:45,626 Watching for file changes with StatReloader
+ERROR 2024-09-08 08:57:47,559 Internal Server Error: /finance/list/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py", line 25, in __str__
+    return f"f{self.student} {self.fistname} "
+                              ^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'fist'
+ERROR 2024-09-08 08:57:47,564 "GET /finance/list/ HTTP/1.1" 500 170778
+INFO 2024-09-08 08:57:57,540 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:57:58,438 Watching for file changes with StatReloader
+INFO 2024-09-08 08:57:59,920 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:00,419 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:04,735 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:05,510 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:08,112 "GET /finance/list/ HTTP/1.1" 200 102436
+INFO 2024-09-08 08:58:22,923 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:23,453 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:26,700 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:27,298 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:29,356 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:29,815 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:32,432 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:33,231 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:40,643 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:41,237 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:45,233 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:46,154 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:49,312 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:58:50,149 Watching for file changes with StatReloader
+INFO 2024-09-08 08:58:52,455 "GET /finance/list/ HTTP/1.1" 200 103865
+INFO 2024-09-08 08:59:05,162 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:59:06,389 Watching for file changes with StatReloader
+INFO 2024-09-08 08:59:09,005 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:59:09,780 Watching for file changes with StatReloader
+INFO 2024-09-08 08:59:18,853 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:59:19,453 Watching for file changes with StatReloader
+INFO 2024-09-08 08:59:22,128 "GET /finance/list/ HTTP/1.1" 200 104051
+INFO 2024-09-08 08:59:38,925 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 08:59:39,828 Watching for file changes with StatReloader
+INFO 2024-09-08 09:00:05,997 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:00:06,759 Watching for file changes with StatReloader
+INFO 2024-09-08 09:00:09,558 "GET /finance/list/ HTTP/1.1" 200 104051
+INFO 2024-09-08 09:00:17,562 "GET /finance/189/detail/ HTTP/1.1" 200 17250
+INFO 2024-09-08 09:01:05,605 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:01:07,418 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:04,525 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:05,762 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:11,083 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:12,762 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:14,015 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:15,438 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:17,695 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:18,748 Watching for file changes with StatReloader
+ERROR 2024-09-08 09:04:22,667 Internal Server Error: /finance/list/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1070, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 1047, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py", line 25, in __str__
+    return f"{self.student} {self.student.firstname} ({self.student.registration_number}) {self.student.parent_mobile_number} "
+                                                                                           ^^^^^^^^^^^^^^^^^
+AttributeError: 'Student' object has no attribute 'pare'
+ERROR 2024-09-08 09:04:22,673 "GET /finance/list/ HTTP/1.1" 500 171078
+INFO 2024-09-08 09:04:29,300 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:30,129 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:34,003 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:34,583 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:36,086 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:04:36,787 Watching for file changes with StatReloader
+INFO 2024-09-08 09:04:38,651 "GET /finance/list/ HTTP/1.1" 200 107027
+INFO 2024-09-08 09:08:56,563 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 09:09:16,883 "GET /finance/list/ HTTP/1.1" 200 107027
+INFO 2024-09-08 09:09:31,360 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:09:32,412 Watching for file changes with StatReloader
+INFO 2024-09-08 09:09:34,015 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:09:34,804 Watching for file changes with StatReloader
+INFO 2024-09-08 09:09:41,527 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:09:42,025 Watching for file changes with StatReloader
+INFO 2024-09-08 09:09:43,533 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:09:44,014 Watching for file changes with StatReloader
+INFO 2024-09-08 09:09:56,677 "GET /finance/list/ HTTP/1.1" 200 102191
+INFO 2024-09-08 09:10:21,515 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-08 09:10:22,427 Watching for file changes with StatReloader
+INFO 2024-09-08 09:10:25,590 "GET /finance/list/ HTTP/1.1" 200 100442
+INFO 2024-09-08 09:12:43,496 "GET /finance/list/ HTTP/1.1" 200 107016
+INFO 2024-09-08 09:12:52,943 "GET /finance/list/ HTTP/1.1" 200 107016
+INFO 2024-09-08 09:12:58,114 "GET /finance/list/ HTTP/1.1" 200 107016
+INFO 2024-09-08 09:13:00,967 "GET /finance/189/detail/ HTTP/1.1" 200 17250
+INFO 2024-09-08 09:14:12,838 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 09:14:13,838 Watching for file changes with StatReloader
+INFO 2024-09-08 09:14:15,704 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-08 09:14:16,640 Watching for file changes with StatReloader
+INFO 2024-09-08 09:15:47,811 "GET /finance/list/ HTTP/1.1" 200 107016
+INFO 2024-09-08 09:15:50,016 "GET /finance/189/detail/ HTTP/1.1" 200 17250
+INFO 2024-09-08 09:21:52,765 Watching for file changes with StatReloader
+WARNING 2024-09-08 09:21:55,771 Not Found: /finance/
+WARNING 2024-09-08 09:21:55,771 "GET /finance/ HTTP/1.1" 404 7750
+WARNING 2024-09-08 09:21:58,350 Not Found: /finance/
+WARNING 2024-09-08 09:21:58,351 "GET /finance/ HTTP/1.1" 404 7750
+INFO 2024-09-08 09:22:03,345 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-08 09:22:06,577 "GET /finance/list/ HTTP/1.1" 200 107016
+INFO 2024-09-08 09:22:30,480 "GET /finance/189/detail/ HTTP/1.1" 200 17253
+INFO 2024-09-08 09:22:35,533 "GET /finance/196/detail/ HTTP/1.1" 200 16866
+INFO 2024-09-08 09:22:40,912 "GET /finance/create/ HTTP/1.1" 200 27572
+INFO 2024-09-08 09:23:08,624 "POST /finance/create/ HTTP/1.1" 302 0
+INFO 2024-09-08 09:23:08,685 "GET /finance/list HTTP/1.1" 301 0
+INFO 2024-09-08 09:23:09,594 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-08 09:23:20,814 "GET /finance/222/detail/ HTTP/1.1" 200 15859
+INFO 2024-09-08 09:23:44,454 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 09:23:46,241 "GET /student/create/ HTTP/1.1" 200 16876
+INFO 2024-09-08 09:23:59,076 "POST /student/create/ HTTP/1.1" 200 17114
+INFO 2024-09-08 09:24:11,080 "POST /student/create/ HTTP/1.1" 200 17114
+INFO 2024-09-08 09:24:26,589 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2024-09-08 09:24:26,617 "GET /student/287/ HTTP/1.1" 200 12847
+INFO 2024-09-08 09:24:26,721 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2024-09-08 09:24:37,126 "GET /finance/create/ HTTP/1.1" 200 27628
+INFO 2024-09-08 09:24:46,641 "GET /student/delete/287/ HTTP/1.1" 200 10294
+INFO 2024-09-08 09:24:48,288 "POST /student/delete/287/ HTTP/1.1" 302 0
+INFO 2024-09-08 09:24:48,619 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 09:25:09,539 "GET /student/list HTTP/1.1" 200 79785
+INFO 2024-09-08 09:25:13,363 "GET /student/create/ HTTP/1.1" 200 16876
+INFO 2024-09-08 09:25:37,440 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2024-09-08 09:25:37,532 "GET /student/288/ HTTP/1.1" 200 12848
+INFO 2024-09-08 09:25:48,478 "GET /finance/create/ HTTP/1.1" 200 27628
+INFO 2024-09-08 09:26:12,883 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-12 16:47:11,905 Watching for file changes with StatReloader
+INFO 2024-09-12 16:47:35,986 "GET / HTTP/1.1" 302 0
+INFO 2024-09-12 16:47:36,133 "GET / HTTP/1.1" 302 0
+INFO 2024-09-12 16:47:36,189 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-12 16:47:36,212 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-12 16:47:43,632 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-12 16:48:03,894 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-12 16:48:04,500 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-12 16:48:04,659 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-12 16:48:04,663 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-12 16:48:04,665 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-12 16:48:04,671 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-12 16:48:04,683 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-12 16:48:04,687 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-12 16:48:04,689 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-12 16:48:04,694 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-12 16:48:05,068 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-12 16:48:22,637 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-09-12 16:48:22,674 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-12 16:48:22,866 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-09-12 16:48:23,049 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-09-12 16:48:23,331 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-09-12 16:48:24,805 Not Found: /favicon.ico
+WARNING 2024-09-12 16:48:24,806 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-09-12 16:48:29,023 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-12 16:48:31,177 "GET /finance/189/detail/ HTTP/1.1" 200 17253
+INFO 2024-09-16 07:30:58,559 Watching for file changes with StatReloader
+INFO 2024-09-16 07:31:27,726 "GET / HTTP/1.1" 302 0
+INFO 2024-09-16 07:31:27,780 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-16 07:31:28,168 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-16 07:31:28,172 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-16 07:31:28,175 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-16 07:31:28,182 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-16 07:31:28,191 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-16 07:31:28,198 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-16 07:31:28,582 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-16 07:31:28,618 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-16 07:31:28,638 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-16 07:31:28,639 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-16 07:31:28,640 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-16 07:31:28,640 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-16 07:31:28,641 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-16 07:31:28,694 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-16 07:31:39,401 "POST /accounts/login/ HTTP/1.1" 200 4258
+INFO 2024-09-16 07:32:06,820 "POST /accounts/login/ HTTP/1.1" 200 4258
+INFO 2024-09-16 07:32:22,420 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-09-16 07:32:22,439 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-16 07:32:22,517 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-09-16 07:32:22,636 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-09-16 07:32:22,747 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+WARNING 2024-09-16 07:32:23,707 Not Found: /favicon.ico
+WARNING 2024-09-16 07:32:23,708 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-09-16 07:32:52,041 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 07:32:57,128 "GET /finance/189/detail/ HTTP/1.1" 200 17253
+INFO 2024-09-16 07:34:41,487 "GET /finance/189/detail/ HTTP/1.1" 200 17399
+INFO 2024-09-16 07:37:42,338 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/models.py changed, reloading.
+INFO 2024-09-16 07:37:43,794 Watching for file changes with StatReloader
+INFO 2024-09-16 07:38:19,626 "GET /finance/189/detail/ HTTP/1.1" 200 17641
+INFO 2024-09-16 07:38:31,452 "GET /finance/189/detail/ HTTP/1.1" 200 17405
+INFO 2024-09-16 07:58:36,053 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 07:58:37,779 Watching for file changes with StatReloader
+INFO 2024-09-16 07:58:39,658 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 07:58:40,359 Watching for file changes with StatReloader
+INFO 2024-09-16 07:58:49,403 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 07:58:50,713 Watching for file changes with StatReloader
+INFO 2024-09-16 07:58:53,547 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 07:58:54,165 Watching for file changes with StatReloader
+INFO 2024-09-16 07:59:00,743 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 07:59:01,300 Watching for file changes with StatReloader
+INFO 2024-09-16 08:05:06,063 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 08:05:08,905 "GET /smssender/send-sms/ HTTP/1.1" 200 29263
+INFO 2024-09-16 08:05:17,032 "GET /student/list HTTP/1.1" 200 80097
+INFO 2024-09-16 08:05:18,814 "GET /student/list HTTP/1.1" 200 80097
+INFO 2024-09-16 08:05:21,419 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 08:05:22,369 "GET /smssender/send-sms/ HTTP/1.1" 200 29263
+INFO 2024-09-16 08:05:34,167 "GET /smssender/send-sms/ HTTP/1.1" 200 29263
+INFO 2024-09-16 08:05:38,702 "GET /static/dist/css/adminlte.min.css.map HTTP/1.1" 200 2149167
+INFO 2024-09-16 08:05:55,287 "GET /smssender/send-sms/ HTTP/1.1" 200 29263
+INFO 2024-09-16 08:06:07,884 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:06:09,075 Watching for file changes with StatReloader
+INFO 2024-09-16 08:06:11,234 "GET /smssender/send-sms/ HTTP/1.1" 200 29224
+INFO 2024-09-16 08:06:18,134 Watching for file changes with StatReloader
+INFO 2024-09-16 08:06:20,041 "GET /smssender/send-sms/ HTTP/1.1" 200 29224
+INFO 2024-09-16 08:06:22,430 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-16 08:06:22,737 "GET /static/plugins/toastr/toastr.js.map HTTP/1.1" 200 25633
+INFO 2024-09-16 08:06:22,739 "GET /static/dist/js/adminlte.js.map HTTP/1.1" 200 113276
+INFO 2024-09-16 08:06:22,743 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 318045
+WARNING 2024-09-16 08:06:23,214 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 08:06:24,219 "GET /student/list HTTP/1.1" 200 80097
+WARNING 2024-09-16 08:06:25,028 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 08:06:27,933 "GET /finance/list/ HTTP/1.1" 200 107527
+WARNING 2024-09-16 08:06:28,823 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 08:06:29,331 "GET /smssender/send-sms/ HTTP/1.1" 200 29224
+WARNING 2024-09-16 08:06:37,917 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 08:08:08,294 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:08:09,465 Watching for file changes with StatReloader
+INFO 2024-09-16 08:08:13,841 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:08:14,596 Watching for file changes with StatReloader
+INFO 2024-09-16 08:08:35,160 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:08:35,812 Watching for file changes with StatReloader
+INFO 2024-09-16 08:08:56,013 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:08:57,413 Watching for file changes with StatReloader
+INFO 2024-09-16 08:10:47,201 "GET /smssender/send-sms/ HTTP/1.1" 200 29224
+INFO 2024-09-16 08:14:24,651 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:14:26,036 Watching for file changes with StatReloader
+INFO 2024-09-16 08:14:30,481 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:14:31,028 Watching for file changes with StatReloader
+INFO 2024-09-16 08:14:33,297 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:14:33,801 Watching for file changes with StatReloader
+INFO 2024-09-16 08:14:37,000 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:14:37,688 Watching for file changes with StatReloader
+INFO 2024-09-16 08:14:40,464 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:14:41,124 Watching for file changes with StatReloader
+INFO 2024-09-16 08:14:46,697 "GET /smssender/send-sms/ HTTP/1.1" 200 31637
+INFO 2024-09-16 08:27:41,619 "GET /student/list HTTP/1.1" 200 80097
+INFO 2024-09-16 08:27:48,442 "GET /student/create/ HTTP/1.1" 200 16876
+INFO 2024-09-16 08:28:35,001 "POST /student/create/ HTTP/1.1" 200 17267
+INFO 2024-09-16 08:29:26,742 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2024-09-16 08:29:26,771 "GET /student/289/ HTTP/1.1" 200 12856
+INFO 2024-09-16 08:29:26,898 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2024-09-16 08:29:29,628 "GET /smssender/send-sms/ HTTP/1.1" 200 31693
+ERROR 2024-09-16 08:44:17,703 Internal Server Error: /smssender/send-sms/
+ERROR 2024-09-16 08:44:17,707 "POST /smssender/send-sms/ HTTP/1.1" 500 70
+INFO 2024-09-16 08:50:50,215 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 08:50:52,394 "GET /finance/189/detail/ HTTP/1.1" 200 17405
+INFO 2024-09-16 08:59:34,937 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:59:36,363 Watching for file changes with StatReloader
+INFO 2024-09-16 08:59:39,217 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/smssender/views.py changed, reloading.
+INFO 2024-09-16 08:59:40,106 Watching for file changes with StatReloader
+INFO 2024-09-16 09:06:15,267 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:06:16,593 Watching for file changes with StatReloader
+INFO 2024-09-16 09:08:18,106 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:08:19,866 Watching for file changes with StatReloader
+INFO 2024-09-16 09:10:22,771 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 09:10:23,106 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-16 09:10:23,132 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-16 09:10:23,141 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-16 09:10:23,143 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-16 09:10:23,147 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-16 09:10:23,148 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-16 09:10:23,149 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-16 09:10:23,164 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+ERROR 2024-09-16 09:10:24,804 Internal Server Error: /finance/189/detail/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 484, in parse
+    raise self.error(token, e)
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' -  object.amount_payable' from 'object.balance -  object.amount_payable'
+ERROR 2024-09-16 09:10:24,822 "GET /finance/189/detail/ HTTP/1.1" 500 198084
+INFO 2024-09-16 09:10:25,112 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-16 09:10:25,112 - Broken pipe from ('127.0.0.1', 49213)
+INFO 2024-09-16 09:12:39,136 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:12:40,406 Watching for file changes with StatReloader
+INFO 2024-09-16 09:12:42,666 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:12:43,166 Watching for file changes with StatReloader
+INFO 2024-09-16 09:12:47,795 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:12:48,460 Watching for file changes with StatReloader
+INFO 2024-09-16 09:12:53,049 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:12:53,648 Watching for file changes with StatReloader
+INFO 2024-09-16 09:12:55,785 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:12:56,417 Watching for file changes with StatReloader
+INFO 2024-09-16 09:13:00,219 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:13:00,709 Watching for file changes with StatReloader
+INFO 2024-09-16 09:15:05,036 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:15:06,404 Watching for file changes with StatReloader
+INFO 2024-09-16 09:15:09,637 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:15:10,157 Watching for file changes with StatReloader
+INFO 2024-09-16 09:15:11,929 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:15:12,744 Watching for file changes with StatReloader
+ERROR 2024-09-16 09:15:24,408 Internal Server Error: /finance/189/detail/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py", line 71, in get_context_data
+    context["rbalance_from_previous"] = self.object.rbalance_from_previous  # Expose the new field
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'rbalance_from_previous'. Did you mean: 'balance_from_previous_term'?
+ERROR 2024-09-16 09:15:24,418 "GET /finance/189/detail/ HTTP/1.1" 500 85562
+INFO 2024-09-16 09:15:31,358 "GET /finance/list/ HTTP/1.1" 200 107527
+ERROR 2024-09-16 09:15:33,307 Internal Server Error: /finance/189/detail/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py", line 71, in get_context_data
+    context["rbalance_from_previous"] = self.object.rbalance_from_previous  # Expose the new field
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'rbalance_from_previous'. Did you mean: 'balance_from_previous_term'?
+ERROR 2024-09-16 09:15:33,313 "GET /finance/189/detail/ HTTP/1.1" 500 85425
+ERROR 2024-09-16 09:15:54,523 Internal Server Error: /finance/189/detail/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py", line 71, in get_context_data
+    context["rbalance_from_previous"] = self.object.rbalance_from_previous  # Expose the new field
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'rbalance_from_previous'. Did you mean: 'balance_from_previous_term'?
+ERROR 2024-09-16 09:15:54,564 "GET /finance/189/detail/ HTTP/1.1" 500 85562
+INFO 2024-09-16 09:16:18,950 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:16:20,251 Watching for file changes with StatReloader
+INFO 2024-09-16 09:16:23,851 "GET /finance/list/ HTTP/1.1" 200 107527
+ERROR 2024-09-16 09:16:24,480 Internal Server Error: /finance/221/detail/
+Traceback (most recent call last):
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/.venv/lib/python3.12/site-packages/django/views/generic/detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py", line 71, in get_context_data
+    context["rbalance_from_previous"] = self.object.rbalance_from_previous  # Expose the new field
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Invoice' object has no attribute 'rbalance_from_previous'. Did you mean: 'balance_from_previous_term'?
+ERROR 2024-09-16 09:16:24,487 "GET /finance/221/detail/ HTTP/1.1" 500 85382
+INFO 2024-09-16 09:16:46,665 /Users/ahmad/dev/pyProjects/django_apps/solutions/MakarantaSystemManagement/apps/finance/views.py changed, reloading.
+INFO 2024-09-16 09:16:47,515 Watching for file changes with StatReloader
+INFO 2024-09-16 09:16:58,535 "GET /finance/221/detail/ HTTP/1.1" 200 16630
+WARNING 2024-09-16 09:19:33,682 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 09:20:13,696 "GET /finance/221/detail/ HTTP/1.1" 200 16671
+WARNING 2024-09-16 09:20:15,485 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 09:21:56,663 "GET /finance/221/detail/ HTTP/1.1" 200 16662
+WARNING 2024-09-16 09:21:58,377 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-16 09:23:34,810 "GET /finance/221/detail/ HTTP/1.1" 200 16662
+WARNING 2024-09-16 09:23:36,536 "GET /static/plugins/Datatables/pdfmake.min.js.map HTTP/1.1" 404 1870
+INFO 2024-09-24 19:51:29,844 Watching for file changes with StatReloader
+INFO 2024-09-24 19:53:44,166 "GET / HTTP/1.1" 302 0
+INFO 2024-09-24 19:53:44,491 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-24 19:53:45,927 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-24 19:53:45,932 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-24 19:53:45,934 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-24 19:53:45,943 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-24 19:53:45,958 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-24 19:53:45,983 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-24 19:53:46,003 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-24 19:53:46,006 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-24 19:53:46,142 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-24 19:53:46,148 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-24 19:53:49,254 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-24 19:53:49,270 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-24 19:53:49,276 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-24 19:53:49,279 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-24 19:53:49,282 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-24 19:53:49,293 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-24 19:53:49,297 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-24 19:53:49,345 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-24 19:53:49,428 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-24 19:53:49,433 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-24 19:53:49,436 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-24 19:53:53,920 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-09-24 19:53:53,967 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-24 19:53:54,167 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-09-24 19:53:54,182 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-09-24 19:53:54,421 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2024-09-24 19:53:54,444 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+WARNING 2024-09-24 19:54:44,816 Not Found: /favicon.ico
+WARNING 2024-09-24 19:54:44,823 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-09-24 19:56:18,555 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-24 19:56:59,385 "GET /finance/189/detail/ HTTP/1.1" 200 17503
+INFO 2024-09-29 14:10:34,967 Watching for file changes with StatReloader
+INFO 2024-09-29 14:10:48,094 "GET / HTTP/1.1" 302 0
+INFO 2024-09-29 14:10:48,136 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-09-29 14:10:48,293 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-09-29 14:10:48,297 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-09-29 14:10:48,302 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-09-29 14:10:48,328 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-09-29 14:10:48,347 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-09-29 14:10:48,353 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-09-29 14:10:48,354 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-09-29 14:10:48,377 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-09-29 14:10:48,383 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-09-29 14:10:48,387 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-09-29 14:10:48,388 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-09-29 14:10:48,391 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-09-29 14:10:48,395 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-09-29 14:10:48,894 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-09-29 14:11:18,449 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-09-29 14:11:18,468 "GET / HTTP/1.1" 200 11576
+INFO 2024-09-29 14:11:18,497 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-09-29 14:11:18,642 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2024-09-29 14:11:18,754 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+WARNING 2024-09-29 14:11:19,383 Not Found: /favicon.ico
+WARNING 2024-09-29 14:11:19,384 "GET /favicon.ico HTTP/1.1" 404 6312
+INFO 2024-09-29 14:12:19,116 "GET /student/list HTTP/1.1" 200 80409
+INFO 2024-09-29 14:12:22,968 "GET /finance/list/ HTTP/1.1" 200 107527
+INFO 2024-09-29 14:12:24,309 "GET /finance/189/detail/ HTTP/1.1" 200 17503
+INFO 2024-09-29 14:16:59,872 "GET /finance/189/detail/ HTTP/1.1" 200 17503
+INFO 2024-09-29 14:19:55,891 "GET /finance/189/detail/ HTTP/1.1" 200 17503
+INFO 2024-09-29 14:20:15,948 "GET /finance/189/detail/ HTTP/1.1" 200 17510
+INFO 2024-09-29 14:20:53,435 "GET /finance/189/detail/ HTTP/1.1" 200 17501
+INFO 2024-09-29 14:24:11,828 "GET /finance/189/detail/ HTTP/1.1" 200 18399
+INFO 2024-09-29 14:24:48,308 "GET /finance/189/detail/ HTTP/1.1" 200 18445
+INFO 2024-09-29 14:25:20,822 "GET /finance/189/detail/ HTTP/1.1" 200 18497
+INFO 2024-09-29 14:26:15,715 "GET /finance/189/detail/ HTTP/1.1" 200 18514
+INFO 2024-09-29 14:26:53,579 "GET /finance/189/detail/ HTTP/1.1" 200 18435
+INFO 2024-09-29 14:27:41,531 "GET /finance/189/detail/ HTTP/1.1" 200 18847
+INFO 2024-09-29 14:28:05,067 "GET /finance/189/detail/ HTTP/1.1" 200 18921
+INFO 2024-09-29 14:28:16,748 "GET /finance/189/detail/ HTTP/1.1" 200 18920
+INFO 2024-09-29 14:28:52,709 "GET /finance/189/detail/ HTTP/1.1" 200 18954
+INFO 2024-09-29 14:29:21,605 "GET /finance/189/detail/ HTTP/1.1" 200 18953
+INFO 2024-09-29 14:29:44,702 "GET /finance/189/detail/ HTTP/1.1" 200 18947
+INFO 2024-09-29 14:29:45,989 "GET /finance/189/detail/ HTTP/1.1" 200 18947
+INFO 2024-09-29 14:30:01,949 "GET /finance/189/detail/ HTTP/1.1" 200 18977
+INFO 2024-09-29 14:30:17,598 "GET /finance/189/detail/ HTTP/1.1" 200 18962
+INFO 2024-09-29 14:30:44,707 "GET /finance/189/detail/ HTTP/1.1" 200 19012
+INFO 2024-09-29 14:31:07,644 "GET /finance/189/detail/ HTTP/1.1" 200 19018
+INFO 2024-09-29 14:31:26,965 "GET /finance/189/detail/ HTTP/1.1" 200 19018
+INFO 2024-09-29 14:32:03,969 "GET /finance/189/detail/ HTTP/1.1" 200 19072
+INFO 2024-09-29 14:32:13,700 "GET /finance/189/detail/ HTTP/1.1" 200 19071
+INFO 2024-10-04 19:59:29,805 Watching for file changes with StatReloader
+INFO 2024-10-04 19:59:44,345 "GET / HTTP/1.1" 302 0
+INFO 2024-10-04 19:59:44,458 "GET /accounts/login/?next=/ HTTP/1.1" 200 4133
+INFO 2024-10-04 19:59:45,019 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58578
+INFO 2024-10-04 19:59:45,104 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2024-10-04 19:59:45,131 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19724
+INFO 2024-10-04 19:59:45,159 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13632
+INFO 2024-10-04 19:59:45,190 "GET /static/dist/css/login-page.css HTTP/1.1" 200 8610
+INFO 2024-10-04 19:59:45,211 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5251
+INFO 2024-10-04 19:59:45,218 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+INFO 2024-10-04 19:59:45,237 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88145
+INFO 2024-10-04 19:59:45,241 "GET /static/dist/js/demo.js HTTP/1.1" 200 12616
+INFO 2024-10-04 19:59:45,243 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 57530
+INFO 2024-10-04 19:59:45,245 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42383
+INFO 2024-10-04 19:59:45,252 "GET /static/dist/img/imam_logo.png HTTP/1.1" 200 196027
+INFO 2024-10-04 19:59:45,269 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686707
+INFO 2024-10-04 19:59:52,774 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2024-10-04 20:00:14,853 "POST /accounts/login/ HTTP/1.1" 200 4258
+INFO 2024-10-04 20:00:22,567 "POST /accounts/login/ HTTP/1.1" 200 4258
+INFO 2024-10-04 20:00:35,505 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2024-10-04 20:00:35,536 "GET / HTTP/1.1" 200 11576
+INFO 2024-10-04 20:00:35,562 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25780
+INFO 2024-10-04 20:00:35,725 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042446
+INFO 2024-10-04 20:00:35,962 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2024-10-04 20:01:17,642 "GET /student/list HTTP/1.1" 200 80409
+INFO 2024-10-04 20:01:26,382 "GET /student/254/ HTTP/1.1" 200 13255
+INFO 2024-10-04 20:01:26,523 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2024-10-04 20:01:53,432 "GET /finance/create/ HTTP/1.1" 200 27684
+INFO 2024-10-04 20:02:36,103 "POST /finance/create/ HTTP/1.1" 302 0
+INFO 2024-10-04 20:02:36,187 "GET /finance/list HTTP/1.1" 301 0
+INFO 2024-10-04 20:02:38,171 "GET /finance/list/ HTTP/1.1" 200 108046
+INFO 2024-10-04 20:02:45,887 "GET /finance/221/detail/ HTTP/1.1" 200 17378
+INFO 2024-10-04 20:03:02,158 "GET /finance/list/ HTTP/1.1" 200 108046
+INFO 2024-10-04 20:03:05,247 "GET /finance/221/detail/ HTTP/1.1" 200 17378
+INFO 2024-10-04 20:03:34,436 "GET /student/list HTTP/1.1" 200 80409
+INFO 2024-10-04 20:03:36,995 "GET /student/list HTTP/1.1" 200 80409
+INFO 2024-10-04 20:03:42,080 "GET /student/create/ HTTP/1.1" 200 16876
+INFO 2024-10-04 20:05:50,540 "GET /class/list/ HTTP/1.1" 200 13539
+INFO 2024-10-04 20:06:02,812 "GET /student/list HTTP/1.1" 200 80409
+INFO 2024-10-04 20:06:10,470 "GET /student/233/ HTTP/1.1" 200 13269
+INFO 2024-10-04 20:06:39,035 "GET /student/112/ HTTP/1.1" 200 13269
+INFO 2024-10-04 20:06:57,269 "GET /smssender/send-sms/ HTTP/1.1" 200 31693
+INFO 2024-10-04 20:07:48,979 "GET /class/list/ HTTP/1.1" 200 13539
+INFO 2024-10-04 20:07:53,097 "GET /result/view/all HTTP/1.1" 200 453960
+INFO 2024-10-04 20:08:11,271 "GET /result/edit-results/ HTTP/1.1" 200 216199
