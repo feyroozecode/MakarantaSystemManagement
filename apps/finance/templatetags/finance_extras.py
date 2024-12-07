@@ -51,3 +51,28 @@ def french_date(value):
             return english_date.replace(eng_month, fr_month)
     
     return english_date
+
+@register.filter
+def french_datetime(value):
+    """Convert datetime to French format with time"""
+    if not value:
+        return ""
+    
+    french_months = {
+        'January': 'Janvier', 'February': 'Février', 'March': 'Mars',
+        'April': 'Avril', 'May': 'Mai', 'June': 'Juin',
+        'July': 'Juillet', 'August': 'Août', 'September': 'Septembre',
+        'October': 'Octobre', 'November': 'Novembre', 'December': 'Décembre'
+    }
+    
+    try:
+        # Format the date and time
+        formatted_date = value.strftime("%-d %B %Y à %H:%M")
+        
+        # Replace English month with French month
+        for eng, fr in french_months.items():
+            formatted_date = formatted_date.replace(eng, fr)
+            
+        return formatted_date
+    except:
+        return str(value)

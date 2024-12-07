@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load humanize %}
 {% load static %}
+{% load finance_extras %}
 
 <head>
   <style>
@@ -357,6 +358,7 @@
                   Récu
                 </div>
                 <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span class="text-600 text-90">Récu de paiement N°:</span> {{ receipt_number }} </div>
+                <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1"></i> <span class="text-600 text-90">Créé le:</span> {{ object.created_at | french_datetime }}</div>
                 <div class="my-2"><i class="fa fa-circle text-blue-m2 text-xs mr-1 flex-end"></i> <span class="text-600 text-90">Status:</span> <span class="badge badge-warning badge-pill px-25">Payée</span></div>
               </div>
             </div>
@@ -441,8 +443,8 @@
           <div class="text-95 text-secondary-d3">
               <div class="row mb-2 mb-sm-0 py-25">
                 <div class="d-none d-sm-block col-1"> {{ forloop.counter }} </div>
-                <div class="col-7 col-sm-5"> {{ receipt.amount_paid }} </div>
-                <div class="col-2 text-secondary-d2">{{ receipt.date_paid }} </div>
+                <div class="col-7 col-sm-5"> {{ receipt.amount_paid | intcomma }} CFA</div>
+                <div class="col-2 text-secondary-d2">{{ receipt.date_paid | french_datetime }}</div>
                 <div class="col-4 text-secondary-d2"> {{ receipt.comment }}</div>
               </div>
             </div>
@@ -461,7 +463,7 @@
 
       </div>
       <div class="mt-4">
-            <div class="text-600 text-90">Date de paiement : {{ current_date }}</div>
+            <div class="text-600 text-90">Date de paiement : {{ current_date | french_datetime }}</div>
             <div class="d-flex justify-content-end col-10" style=" padding-right: 10px;">Signature:</div>
       </div>
       

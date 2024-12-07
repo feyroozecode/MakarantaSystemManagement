@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.utils import timezone
+from datetime import datetime, date
 
 from apps.corecode.models import AcademicSession, AcademicTerm, StudentClass
 from apps.students.models import Student
@@ -25,17 +26,22 @@ class Invoice(models.Model):
         return f"{self.student} "
 
     def created_at(self):
-        """Returns the creation date of the invoice"""
+        """Returns the creation datetime of the invoice"""
         if self.receipt_set.exists():
-            return self.receipt_set.order_by('date_paid').first().date_paid
+            # Get the first receipt's datetime
+            first_receipt = self.receipt_set.order_by('date_paid').first()
+            # Combine date with default time if no time component
+            return timezone.make_aware(datetime.combine(first_receipt.date_paid, datetime.min.time())) if isinstance(first_receipt.date_paid, date) else first_receipt.date_paid
         elif hasattr(self.session, 'current') and self.session.current:
             return timezone.now()
         elif hasattr(self.session, 'start_date') and self.session.start_date:
-            return self.session.start_date
+            # Convert date to datetime if necessary
+            return timezone.make_aware(datetime.combine(self.session.start_date, datetime.min.time())) if isinstance(self.session.start_date, date) else self.session.start_date
         elif hasattr(self.term, 'current') and self.term.current:
             return timezone.now()
         elif hasattr(self.term, 'start_date') and self.term.start_date:
-            return self.term.start_date
+            # Convert date to datetime if necessary
+            return timezone.make_aware(datetime.combine(self.term.start_date, datetime.min.time())) if isinstance(self.term.start_date, date) else self.term.start_date
         return timezone.now()
 
     def balance(self):
