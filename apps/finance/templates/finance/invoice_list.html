@@ -60,14 +60,10 @@
           <th>N°</th>
           <th>Date Création</th>
           <th>Étudiant</th>
-         <!-- <th>Session - Trimestre</th> --> 
           <th>Contact Parent</th>
-          <th>Montant Trimestre</th>
-          <th>Payé Trimestre</th>
-          <th>Reste Trimestre</th>
-          <th>Montant Annuel</th>
-          <th>Payé Annuel</th>
-          <th>Reste Annuel</th>
+          <th>Montant Total</th>
+          <th>Montant Payé</th>
+          <th>Reste à Payer</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -77,11 +73,7 @@
             <td>{{ forloop.counter}}</td>
             <td>{{ invoice.created_at|french_date }}</td>
             <td>{{ invoice.student.firstname }} {{ invoice.student.name }}</td>
-            <!-- <td>{{ invoice.term}}({{ invoice.session}}) </td> -->
             <td>{{ invoice.student.parent_mobile_number}}</td>
-            <td class="text-right">{{ invoice.total_amount_payable | intcomma }} F</td>
-            <td class="text-right">{{ invoice.total_amount_paid | intcomma }} F</td>
-            <td class="text-right">{{ invoice.balance | intcomma }} F</td>
             <td class="text-right">{{ invoice.total_annual | intcomma }} F</td>
             <td class="text-right">{{ invoice.total_annual_paid | intcomma }} F</td>
             <td class="text-right">{{ invoice.total_annual_balance | intcomma }} F</td>
